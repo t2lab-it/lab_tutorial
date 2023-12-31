@@ -2,14 +2,17 @@
 
 研究室のチュートリアル資料
 
+## 自己チェックリスト
+
+- [卒業論文・修士論文の自己チェックリスト](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/selfcheck_thesis.md)
+  - 執筆した卒業論文や修士論文を指導教員に見てもらう前に確認しておくべきことのリスト．
+
 ## 今後書くもの
 
 ### 自己チェックリスト
 
 - `selfcheck_presentation.md`
   - 卒論・修論の口頭試問スライドの自己チェックリスト：[阪大・基礎工](https://github.com/ryo-ARAKI/thesis_template_ou_es/blob/master/self_checklist_slide.md)ように書いたものを参考にする
-- `selfcheck_thesis.md`
-  - 卒業論文・修士論文の自己チェックリスト：[阪大・基礎工](https://github.com/ryo-ARAKI/thesis_template_ou_es/blob/master/self_checklist.md)ように書いたものを参考にする
 
 ### How to ○○
 
