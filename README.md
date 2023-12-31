@@ -164,6 +164,24 @@
 
 ----
 
+## 大学・大学院で研究をすることについて
+
+私自身が博士後期課程に進学して大学教員としてのキャリアを進むにあたり，以下の二冊はそれぞれ精神的，実務的な面で役に立ちました：
+
+- [ピーター・Ｂ・メダワー著，鎮目 恭夫訳，「若き科学者へ （新版）」，みすず書房（2016）](https://www.msz.co.jp/book/detail/08530/)
+- [E・M・フィリップス，D・S・ピュー著，角谷 快彦訳，「博士号のとり方［第6版］―学生と指導教員のための実践ハンドブック―」，名古屋大学出版局（2018）](https://www.unp.or.jp/ISBN/ISBN978-4-8158-0923-2.html)
+
+以下の博士後期課程を終えた先達のブログ記事も参考になると思います：
+
+- [A Survival Guide to a PhD](https://karpathy.github.io/2016/09/07/phd/)
+- [Twenty things I wish I’d known when I started my PhD](https://doi.org/10.1038/d41586-018-07332-x)
+  - 日本語訳：[研究生活の心構えー修士課程、博士課程に進学したあなたへー](https://www.chem-station.com/chemistenews/research/2019/03/phd.html)
+- [What not to do in graduate school](https://doi.org/10.1038/d41586-019-02255-7)
+- [Lessons from my PhD](https://austinhenley.com/blog/lessonsfrommyphd.html)
+- [10 Tips for Research and a PhD](https://www.ruder.io/10-tips-for-research-and-a-phd/)
+
+----
+
 ## リンク集
 
 - [kaityo256: lab_startup](https://github.com/kaityo256/lab_startup)
