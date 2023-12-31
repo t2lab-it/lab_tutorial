@@ -141,3 +141,8 @@
 ----
 
 ## リンク集
+
+- [kaityo256: lab_startup](https://github.com/kaityo256/lab_startup)
+  - 慶応大・渡辺先生の研究室チュートリアル集
+- [ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)
+  - 執筆者（荒木）が「今日学んだこと（Today I Learned：TIL）」をまとめているリポジトリ
