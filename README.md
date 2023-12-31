@@ -10,6 +10,10 @@
 
  <!-- `howto_setup_PC.md` -->
 
+- Linuxの設定方法
+  - [執筆者（荒木）の初期設定](https://github.com/ryo-ARAKI/TIL/blob/master/linux/initial_setup.md)
+  - SSH/GitHub/VSCode/...の設定方法
+
 ### 数値計算コードの書き方
 
  <!-- `howto_develop_numerical_simulation_code.md` -->
@@ -17,6 +21,9 @@
 ### 研究や論文執筆でのGit/GitHubの使い方
 
  <!-- `howto_use_git_for_research.md` -->
+
+- 研究コード：Issue/Pull Requestを使って「常に動く」コードを `main` ブランチに置く
+- 論文：別ブランチで執筆や添削の反映→ `latexdiff-vc` を使って `main` ブランチとの差分PDFを出力する
 
 ----
 
@@ -63,13 +70,28 @@
 
 <!-- `howto_read_paper.md` -->
 
+- [kaityo256：論文の読み方](https://speakerdeck.com/kaityo256/how-to-survey)
+- その論文が引用している&その論文を引用している文献をチェックして大きな研究の文脈上に位置づける
+- 多読：論文雑誌の新着論文をRSS通知で毎日確認する
+  - Teamsをリンクしたい
+- 多読：タイトル→アブストラクト→図→結論→手法
+- 精読：論文を片面印刷して見開きの左ページに原稿，右ページにノートをとる
+- 精読：LaTeXノートを作って式展開をすべて埋める
+
 ### 論文紹介のやり方
 
  <!-- `howto_review_paper.md` -->
 
+- [kaityo256：論文紹介のやり方](https://speakerdeck.com/kaityo256/how-to-review)
+- 論文を紹介する≠その論文の内容を完璧に披露する
+- 論文を紹介する=大きな研究の文脈上にその論文を位置づける
+- 論文のつながりを可視化できるサービスをリストする
+
 ### 輪講の準備
 
  <!-- `howto_lecture_textbook.md` -->
+
+- [kaityo256：輪講の準備の仕方](https://speakerdeck.com/kaityo256/book-reading)
 
 ----
 
@@ -79,9 +101,21 @@
 
  <!-- `howto_present_progress.md` -->
 
+- [kaityo256：研究発表の仕方](https://speakerdeck.com/kaityo256/happy-presentation)
+- 進捗発表≠うまくいったことの報告
+- 進捗発表=いま詰まっている問題点の共有・議論
+
 ### 学会発表の準備
 
  <!-- `howto_prepare_conference_presentation.md` -->
+
+1. 一番主張したい結果を決める．
+2. それに合わせて発表のストーリーを考える．
+3. 1つのメッセージ/トピックを1枚のスライドに割り振り，全体の構成を決める．
+  - 例：スライド1枚につき理解してほしい図を1つ載せる．
+  - スライド枚数は（基本的に）1分/1枚だが，試問や公聴会は時間が短いのでより多くなってもよい．ただし，その分スライドの構成にはじゅうぶん注意する．
+
+- 「この人のスライド見やすいな」と思う相手にどんな工夫をしているかを聞いてみる
 
 ### 卒論・修論論文の書き方
 
@@ -99,6 +133,10 @@
 ###  奨学金・研究費申請書の書き方
 
 <!-- `howto_apply_grant.md` -->
+
+- 「書けと言われていること」を書く．
+- 模式図を効果的に使う．
+- 審査員と共有できる前提・背景分野の知識を調べる．
 
 ----
 
