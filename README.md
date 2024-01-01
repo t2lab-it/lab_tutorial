@@ -1,6 +1,23 @@
 # lab_tutorial
 
-研究室のチュートリアル資料
+## はじめに
+
+この文章では，大学の研究室に初めて所属する学生さんに向けたチュートリアルや役立つ情報をまとめています．
+同様の目的で書かれた定評のある書籍に
+
+- [E・M・フィリップス，D・S・ピュー著，角谷 快彦訳，「博士号のとり方［第6版］―学生と指導教員のための実践ハンドブック―」，名古屋大学出版局（2018）](https://www.unp.or.jp/ISBN/ISBN978-4-8158-0923-2.html)
+
+があり，私自身も大学院時代に読んで非常に学ぶところが大きかったです．
+また，ネットで読める文章には
+
+- [kaityo256: lab_startup](https://github.com/kaityo256/lab_startup)
+  - 慶応大・渡辺先生の研究室チュートリアル集です．
+- [Hiroyuki Ohsaki：充実した大学・大学院生活のための 100 のヒント (草稿)](https://lsnl.jp/~ohsaki/research/100-tips/)
+  - 関西学院大・大崎先生の研究室生活を充実させるためのヒント集です．
+- [発声練習：卒業論文、修士論文関連のエントリー](https://next49.hatenadiary.jp/entry/20080105/p3)
+
+などがあり，どれも非常に有用です．
+この文章も将来的にはこれらと並ぶような情報を提供できれば，という目標のもと少しずつ書き足していく予定です．
 
 ----
 
@@ -190,12 +207,13 @@
 
 ----
 
-## 大学・大学院で研究をすることについて
+## リンク集
 
-私自身が博士後期課程に進学して大学教員としてのキャリアを進むにあたり，以下の二冊はそれぞれ精神的，実務的な面で役に立ちました：
-
+- [ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)
+  - 私が「今日学んだこと（Today I Learned：TIL）」をまとめています．
+  - 皆さんも同様のリポジトリを作って「何度も参照するけどそのたびにググるのが面倒なこと」などをまとめておくと便利です．
 - [ピーター・Ｂ・メダワー著，鎮目 恭夫訳，「若き科学者へ （新版）」，みすず書房（2016）](https://www.msz.co.jp/book/detail/08530/)
-- [E・M・フィリップス，D・S・ピュー著，角谷 快彦訳，「博士号のとり方［第6版］―学生と指導教員のための実践ハンドブック―」，名古屋大学出版局（2018）](https://www.unp.or.jp/ISBN/ISBN978-4-8158-0923-2.html)
+  - 私自身が博士後期課程に進学して大学教員としてのキャリアを進むにあたり，精神的な心構えを学んだ本です．
 
 以下の博士後期課程を終えた先達のブログ記事も参考になると思います：
 
@@ -205,15 +223,3 @@
 - [What not to do in graduate school](https://doi.org/10.1038/d41586-019-02255-7)
 - [Lessons from my PhD](https://austinhenley.com/blog/lessonsfrommyphd.html)
 - [10 Tips for Research and a PhD](https://www.ruder.io/10-tips-for-research-and-a-phd/)
-
-----
-
-## リンク集
-
-- [ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)
-  - 執筆者（荒木）が「今日学んだこと（Today I Learned：TIL）」をまとめているリポジトリ
-  - みんなも作って「何度も参照するけどそのたびにググるのが面倒なこと」などをまとめておくと便利です．
-- [kaityo256: lab_startup](https://github.com/kaityo256/lab_startup)
-  - 慶応大・渡辺先生の研究室チュートリアル集
-- [Hiroyuki Ohsaki: 充実した大学・大学院生活のための 100 のヒント (草稿)](https://lsnl.jp/~ohsaki/research/100-tips/)
-  - 非常に充実したヒント集です．この文書も（自分なりに）これと同等のものを作ろうとしています．
