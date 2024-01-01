@@ -44,7 +44,7 @@
 
 - ポスト処理でデータを解析するコードとデータをプロットするコードは分割する．
   - 論文を書く段階になると図の微妙な修正を何度もすることになるので，そのたびにデータの解析からやり直していては時間がかかる．
-  - ポスト解析を終え，「このデータをプロットすれば良い」段階で一旦データを吐いておき，別のスクリプトでそれを読み込んでプロットする．
+  - ポスト解析を終え，「このデータをプロットすればよい」段階で一旦データを吐いておき，別のスクリプトでそれを読み込んでプロットする．
     - Pythonなら `.npy` ，MATLABなら `.mat` など，各プログラミング言語で効率的に扱えるバイナリ形式があるのでそれを使う．
 - 色覚多様性に配慮したカラーマップを使う．
   - とくにMATLABは[Jetカラーマップ](https://jp.mathworks.com/help/matlab/ref/jet.html)が規定でひどい．
@@ -73,12 +73,12 @@
    2. 関連しそうな研究室の既発表論文を調べる：わからないときに教員や先輩に訪ねやすい．
    3. 関連する分野の教科書を読む：その分野を創始した論文や重要な発展に寄与した原著論文が引用されているはず．
 2. レビュー論文を探す
-  - レビュー論文：原著論文と教科書の中間で「あるトピックの過去十年〜数十年の進展」をまとめた論文で分野の概観をつかみやすい．
-  - 流体力学分野だとまずはAnnual Review of Fluid Mechanicsで探すとよい．
-  - 他にもAnnual Review of Condensed Matter Physics，Nature Reviews Physics，Review of Modern Physics，Physics Reports，...など．
+   - レビュー論文：原著論文と教科書の中間で「あるトピックの過去十年〜数十年の進展」をまとめた論文で分野の概観をつかみやすい．
+   - 流体力学分野だとまずはAnnual Review of Fluid Mechanicsで探すとよい．
+   - 他にもAnnual Review of Condensed Matter Physics，Nature Reviews Physics，Review of Modern Physics，Physics Reports，...など．
 3. 原著論文を探す
-  - 流体力学分野だとJournal of Fluid Mechanics，Physical Review Fluids，Physics of Fluids，Fluid Dynamics Researchなどが定評のある雑誌．
-  - 他にもPhysical Review Letters/E/Research，...など．
+   - 流体力学分野だとJournal of Fluid Mechanics，Physical Review Fluids，Physics of Fluids，Fluid Dynamics Researchなどが定評のある雑誌．
+   - 他にもPhysical Review Letters/E/Research，...など．
 
 異なる論文雑誌から横断的に論文を探せるサイトは：
 
