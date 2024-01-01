@@ -18,10 +18,19 @@
 
  <!-- `howto_develop_numerical_simulation_code.md` -->
 
+- ポスト処理でデータを解析するコードとデータをプロットするコードは分割する．
+  - 論文を書く段階になると図の微妙な修正を何度もすることになるので，そのたびにデータの解析からやり直していては時間がかかる．
+  - ポスト解析を終え，「このデータをプロットすれば良い」段階で一旦データを吐いておき，別のスクリプトでそれを読み込んでプロットする．
+    - Pythonなら `.npy` ，MATLABなら `.mat` など，各プログラミング言語で効率的に扱えるバイナリ形式があるのでそれを使う．
+- 色覚多様性に配慮したカラーマップを使う．
+  - とくにMATLABは[Jetカラーマップ](https://jp.mathworks.com/help/matlab/ref/jet.html)が規定でひどい．
+  - [Perceptually Uniform Sequential Colormap](https://matplotlib.org/stable/users/explain/colors/colormaps.html#sequential)を使う．
+
 ### 研究や論文執筆でのGit/GitHubの使い方
 
  <!-- `howto_use_git_for_research.md` -->
 
+- [数値計算屋のためのGit入門](https://speakerdeck.com/kaityo256/starting-git)
 - 研究コード：Issue/Pull Requestを使って「常に動く」コードを `main` ブランチに置く
 - 論文：別ブランチで執筆や添削の反映→ `latexdiff-vc` を使って `main` ブランチとの差分PDFを出力する
 
@@ -54,14 +63,14 @@
   - `.bib` ファイルも（出版社のサイトより）使いやすいと思う．
   - お金を払わないと読めない論文もなんやかんや本文を読めるリンクがついていたりする．
 - [arXiv](https://arxiv.org/)
-  - 査読を経て出版される前のプレプリントが読める．
-  - 「正式に出版された原稿」ではないことに注意する．
+  - 査読を経て出版される前のプレプリントが読めるが，「正式に出版された原稿」ではないことに注意する．
   - お金を払わないと読めない論文も草稿段階の原稿がアップされていたりする．
   - 流体力学関連は[physics.flu-dyn](https://arxiv.org/list/physics.flu-dyn/recent)をみればよい．
-  - [arXiv Xplorer](https://arxivxplorer.com/)でarXivから効率的に検索できる．
+  - [arXiv Xplorer](https://arxivxplorer.com/)で効率的に検索できる．
 - [Perplexity](https://www.perplexity.ai/)，[Elicit](https://elicit.org/)，[Typeset](https://typeset.io/)，[Consensus](https://consensus.app/)
   - 知りたいトピックを尋ねると **存在する** 文献を挙げてくれる．
   - ChatGPTは存在しない文献を紹介してくるので論文探しには使わないこと．
+  - 他にもいろいろ便利なサービスが出てきているはずなので，見つけたら教えてください．
 - [Connected Papers](https://www.connectedpapers.com/)
   - 注目したい論文を入力すると，関連論文の相関図を出してくれる．
   - 無料版だとかなり厳しい回数制限があるので注意．
@@ -87,11 +96,27 @@
 - 論文を紹介する=大きな研究の文脈上にその論文を位置づける
 - 論文のつながりを可視化できるサービスをリストする
 
+スライドづくりの一例：
+
+1. 博士のスライドに論文の図表を1枚/1スライドごとに貼る
+2. それぞれの図で主張されていることをまとめ，スライドに書きこむ
+3. 図表以外の重要な情報を追加する
+4. 重要な先行研究を調べ，文脈の理解に必要な図などを加える
+5. 全体構成を見直し，本筋でないスライドを補遺に回す
+
 ### 輪講の準備
 
  <!-- `howto_lecture_textbook.md` -->
 
 - [kaityo256：輪講の準備の仕方](https://speakerdeck.com/kaityo256/book-reading)
+
+輪講資料づくりの一例：
+
+1. 教科書の該当範囲（とそれ以前の範囲）を読み，議論の流れを把握する
+2. その教科書以外の資料を参照して内容を自分なりに再解釈する
+3. 式展開や論理展開の行間を埋める
+
+- 輪講資料には教科書と同じことを書かないよう注意する
 
 ----
 
@@ -111,6 +136,7 @@
 - [kaityo256：研究発表の仕方](https://speakerdeck.com/kaityo256/happy-presentation)
 - 進捗発表=いま詰まっている問題点の共有・議論
   - ↔進捗発表≠うまくいったことの報告
+- 資料作りに時間をかけすぎない
 
 ### 学会発表の準備
 
@@ -184,7 +210,10 @@
 
 ## リンク集
 
-- [kaityo256: lab_startup](https://github.com/kaityo256/lab_startup)
-  - 慶応大・渡辺先生の研究室チュートリアル集
 - [ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)
   - 執筆者（荒木）が「今日学んだこと（Today I Learned：TIL）」をまとめているリポジトリ
+  - みんなも作って「何度も参照するけどそのたびにググるのが面倒なこと」などをまとめておくと便利です．
+- [kaityo256: lab_startup](https://github.com/kaityo256/lab_startup)
+  - 慶応大・渡辺先生の研究室チュートリアル集
+- [Hiroyuki Ohsaki: 充実した大学・大学院生活のための 100 のヒント (草稿)](https://lsnl.jp/~ohsaki/research/100-tips/)
+  - 非常に充実したヒント集です．この文書も（自分なりに）これと同等のものを作ろうとしています．
