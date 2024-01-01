@@ -76,3 +76,5 @@
   - スライドづくりだけでなく発表のコツも載っているので参考になります．
 - [Akimasa Morihata，良い発表をするために](https://www.graco.c.u-tokyo.ac.jp/labs/morihata/presentation_memo.htm)
   - 非常に充実したページで，スライド作成時に気をつけることのみならず作り始める前に考えておくべきことや発表練習などについてもまとまっています．
+- [卒業論文発表会での注意点](https://www.ipc.shimane-u.ac.jp/plant/protocol/happyoukai.htm)
+- [伝わるデザイン](https://tsutawarudesign.com/index.html)
