@@ -52,6 +52,14 @@ TBA：
 
  <!-- `howto_develop_numerical_simulation_code.md` -->
 
+TBA：
+
+- 数値計算の基礎を勉強する教科書
+- 写経・自分なりに改善することで勉強になるオープンソースのソフトウェア
+- 「モダンな」数値計算ソフトウェアの開発環境
+
+数値計算をする際のtipsとして以下を挙げておきます：
+
 - ポスト処理でデータを解析するコードとデータをプロットするコードは分割する．
   - 論文を書く段階になると図の微妙な修正を何度もすることになるので，そのたびにデータの解析からやり直していては時間がかかる．
   - ポスト解析を終え，「このデータをプロットすればよい」段階で一旦データを吐いておき，別のスクリプトでそれを読み込んでプロットする．
@@ -59,7 +67,6 @@ TBA：
 - 色覚多様性に配慮したカラーマップを使う．
   - とくにMATLABは[Jetカラーマップ](https://jp.mathworks.com/help/matlab/ref/jet.html)が規定でひどい．
   - [Perceptually Uniform Sequential Colormap](https://matplotlib.org/stable/users/explain/colors/colormaps.html#sequential)を使う．
-- To Do：プログラミングの勉強方法，数値計算の基礎の勉強方法，テスト駆動などモダンな開発手法，...
 
 ### 研究や論文執筆でのGit/GitHubの使い方
 
