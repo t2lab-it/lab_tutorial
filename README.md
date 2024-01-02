@@ -37,8 +37,16 @@
 
  <!-- `howto_setup_PC.md` -->
 
-- [執筆者（荒木）のLinuxマシンの初期設定](https://github.com/ryo-ARAKI/TIL/blob/master/linux/initial_setup.md)
-- To Do：SSH接続（鍵生成と登録），バージョン管理ソフト（Git/GitHub），エディタ（VSCode），プログラミング言語（Fortran/Python/Julia/MATLAB/...），...
+私は研究に使うPCにLinux（Ubuntu）を入れて使っています（[執筆者のLinux PCの初期設定](https://github.com/ryo-ARAKI/TIL/blob/master/linux/initial_setup.md)）．
+
+TBA：
+
+- SSH接続（鍵生成と登録）
+- サーバの使い方（ログイン/ファイル移動/計算ジョブの投入/...）
+- バージョン管理ソフト（Git/GitHub）
+- プログラミング言語（Fortran/Python/Julia/MATLAB/...）
+- エディタ（VSCode）
+- その他（便利なソフトや設定）
 
 ### 数値計算コードの書き方
 
