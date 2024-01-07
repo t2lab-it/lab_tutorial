@@ -279,6 +279,19 @@ TBA：
   <!-- - まず研究背景を完璧に書いて，次に手法を完璧に書いて，...はおすすめしない． -->
   - 全体の構造を決める→各部に書くキーワードを配置する→文章を書いていく...と反復しつつ原稿の細部を詰めていくほうがよい原稿になると思う．
 
+Gist で管理している[LaTeXテンプレート](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487)のリンク集を以下にまとめています：
+
+<details>
+<summary>LaTeXテンプレート</summary>
+
+- [latex_template.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-latex_template-tex) ：和文のテンプレート
+- [beamer_template.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-beamer_template-tex) ：スライドのテンプレート
+- [beamer_template_poster.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-beamer_template_poster-tex) ：ポスターのテンプレート
+- [beamer_template_flash_talk.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-beamer_template_flash_talk-tex) ：フラッシュトークのテンプレート
+- [standalone_figure.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-standalone_figure-tex) ：TikZ を用いたスタンドアロン図のテンプレート
+
+</details>
+
 ### 学会発表の準備方法
 
  <!-- `howto_prepare_conference_presentation.md` -->
