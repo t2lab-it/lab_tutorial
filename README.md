@@ -41,12 +41,39 @@
 私はLinux（Ubuntu）を入れたPCを研究に使っています．
 理論や数値計算系，とくに一日中サーバやスパコンにつないでいるのであれば，研究用のPCをLinuxにするのは考慮に値する選択肢だと思います（が，バイアスがかかっているかもしれません）．
 実験系は装置の制御ソフトがウィンドウズのみだったりするので要注意です．
-私のPCやソフトウェアの設定は
 
-- [Ubuntu日本語Remixの初期設定とソフトウェアのインストール・設定](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/PC_initial_setup.md)
-- [ソフトウェアの設定ファイル](https://github.com/ryo-ARAKI/TIL?tab=readme-ov-file#%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB)
+私のPCの初期設定やソフトウェアの設定は[Ubuntu日本語Remixの初期設定とソフトウェアのインストール・設定](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/PC_initial_setup.md)にまとめています．
+また，ソフトウェアの設定ファイルはGistで管理しており，その一覧は以下にまとめています：
 
-を参照してください．
+<details>
+<summary>設定ファイルのリスト</summary>
+
+- [config.fish](https://gist.github.com/ryo-ARAKI/9d5e85d7be10863d515850b2ce2182e3)
+  - [fish shell](https://fishshell.com/) の設定ファイル
+- [LaTeX `.sty`](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df)
+  - LaTeX の設定ファイル
+  - [mystyle.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle-sty)
+  - [mystyle_jpn.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_jpn-sty) ：和文用設定ファイル
+  - [mystyle_beamer.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_beamer-sty) ：Beamer 用設定ファイル
+  - [mystyle_beamer_jpn.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_beamer_jpn-sty) ：和文 Beamer 用設定ファイル
+  - [mystyle_biblatex.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_biblatex-sty) ： BibLaTeX 用設定ファイル
+  - [.latexmkrc_revtex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_revtex) ：欧文コンパイル用設定ファイル
+  - [.latexmkrc_uplatex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_uplatex) ：和文コンパイル用設定ファイル
+- [setting.json](https://gist.github.com/ryo-ARAKI/b4a54125e7922d2166f7fa7373c0f6dd)
+  - エディタである [VSCode](https://code.visualstudio.com/) の設定ファイル
+- [.screenrc](https://gist.github.com/ryo-ARAKI/07923755368e1f4ee0f67778a1cf2bca)
+  - ターミナルエミュレーションソフトである [screen](https://www.gnu.org/software/screen/) の設定ファイル
+- [starship.toml](https://gist.github.com/ryo-ARAKI/48a11585299f9032fa4bda60c9bba593)
+  - ターミナルのプロンプトを装飾してくれる [Starship](https://starship.rs/) の設定ファイル
+- [config](https://gist.github.com/ryo-ARAKI/f4031daf4d4c388838b123705aee8893)
+  - ターミナルエミュレータである [Terminator](https://gnome-terminator.org/) の設定ファイル
+- [.vimrc](https://gist.github.com/ryo-ARAKI/a9e64763c1f7d6eb1e210cb13388fd43)
+  - エディタである [vim](https://www.vim.org/) の設定ファイル
+- [.xbindkeysrc](https://gist.github.com/ryo-ARAKI/b17adac7419087a8ae821ebd1b30cd81)
+  - 多ボタンマウスの Linux 用設定ファイル
+  - Logitech MX Master 2S
+
+</details>
 
 ### 数値計算コードの書き方
 
