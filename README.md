@@ -38,20 +38,11 @@
 
  <!-- `howto_setup_PC.md` -->
 
-私はLinux（Ubuntu）を入れたPCを研究に使っています（参考：[私のLinux PCの初期設定](https://github.com/ryo-ARAKI/TIL/blob/master/linux/initial_setup.md)）．
-（プライベートでもUbuntuですが，これはだいぶ偏った属性だと思っています．）
+私はLinux（Ubuntu）を入れたPCを研究に使っています．
+理論や数値計算系，とくに一日中サーバやスパコンにつないでいるのであれば，研究用のPCをLinuxにするのは考慮に値する選択肢だと思います（が，バイアスがかかっているかもしれません）．
+実験系は装置の制御ソフトがウィンドウズのみだったりするので要注意です．
 
-TBA：
-
-- SSH接続（鍵生成と登録）
-- サーバの使い方（ログイン/ファイル移動/計算ジョブの投入/...）
-- バージョン管理ソフト（Git/GitHub）
-- プログラミング言語（Fortran/Python/Julia/MATLAB/...）
-- エディタ（VSCode）
-- その他（便利なソフトや設定）
-- それぞれ参考になるリンクを挙げる
-  - 自分で細かな設定記事は書かない
-  - 自分の設定ファイルなどはできる限りリンクする
+私の[Linux PCの初期設定](https://github.com/ryo-ARAKI/TIL/blob/master/linux/initial_setup.md)および[ソフトウェアの設定ファイル](https://github.com/ryo-ARAKI/TIL?tab=readme-ov-file#%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB)はそれぞれのリンク先を参照してください．
 
 ### 数値計算コードの書き方
 
