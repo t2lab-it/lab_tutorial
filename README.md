@@ -41,8 +41,12 @@
 私はLinux（Ubuntu）を入れたPCを研究に使っています．
 理論や数値計算系，とくに一日中サーバやスパコンにつないでいるのであれば，研究用のPCをLinuxにするのは考慮に値する選択肢だと思います（が，バイアスがかかっているかもしれません）．
 実験系は装置の制御ソフトがウィンドウズのみだったりするので要注意です．
+私のPCやソフトウェアの設定は
 
-私の[Linux PCの初期設定](https://github.com/ryo-ARAKI/TIL/blob/master/linux/initial_setup.md)および[ソフトウェアの設定ファイル](https://github.com/ryo-ARAKI/TIL?tab=readme-ov-file#%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB)はそれぞれのリンク先を参照してください．
+- [Ubuntu日本語Remixの初期設定とソフトウェアのインストール・設定](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/initial_setup.md)
+- [ソフトウェアの設定ファイル](https://github.com/ryo-ARAKI/TIL?tab=readme-ov-file#%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB)
+
+を参照してください．
 
 ### 数値計算コードの書き方
 
