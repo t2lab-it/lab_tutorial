@@ -223,27 +223,79 @@ TBA：
   - [文部科学省，「色覚に関する指導の資料」](https://www.pref.osaka.lg.jp/attach/2470/00004402/sikikaku.pdf)
 - TBA
 
-### 研究や論文執筆でのGit/GitHubの使い方
+### 研究や論文執筆でのGitHubの使い方
 
  <!-- `howto_use_git_for_research.md` -->
 
 研究でプログラムや原稿といったテキスト形式のソースコードを編集するときは，必ずバージョン管理ソフトを使いましょう．
-そのご利益にはさまざまなものがありますが（参考：[数値計算屋のためのGit入門](https://speakerdeck.com/kaityo256/starting-git)），
+そのご利益にはさまざまなものがありますが（参考：[kaityo256: 数値計算屋のためのGit入門](https://speakerdeck.com/kaityo256/starting-git)），
 
 - いつでも（自分でマークした）過去のバージョンに戻すことができる．
-- 複数の機能を並行して実装する・複数人で並行して開発することができる．
+- 複数の機能を並行して実装したり複数人で並行して開発することができる．
 
 が非常に大きいです．
-バージョン管理ソフトにもさまざまなものがありますが，もっとも広く使われているGit/[GitHub](https://github.co.jp/)を使うのがよいと思います．
-簡単な使い方をするだけでもいくつかのコマンド（ `git add/commit/push/fetch/pull` ）を覚える必要があって勉強が大変ですが，わかりやすい資料もたくさんあるよい時代なのですこしずつ慣れていきましょう．
+バージョン管理ソフトにもさまざまなものがありますが，もっとも広く使われている[Git](https://git-scm.com/)/[GitHub](https://github.co.jp/)を使うのがよいと思います．
+簡単な使い方をするだけでもいくつかのコマンド（ `git add/commit/push/fetch/pull` ）を覚える必要があって勉強が大変ですが，すこしずつ慣れていきましょう．
+Git/GitHubは分散型バージョン管理であることから，ローカルのマシン以外にバックアップをとれることも利点です．
+（研究室外のサーバにおいてはいけないデータを扱う際には[GitLab](https://about.gitlab.com/ja-jp/)などオンプレミスな環境を利用しましょう．）
 
-TBA：
+- [kaityo256: GitHub演習](https://github.com/kaityo256/github)
 
-- 研究コード：Issue/Pull Requestを使って「常に動く」コードを `main` ブランチに置きながらコードを書く．
-- 研究ノート：Markdownで書いてGitHubでホストし，指導教員をcollaboratorに入れるとよい
-  - 研究ノートを抜粋したものが進捗報告資料になると省エネでいいよね
-- 論文：別ブランチで執筆を進めたり添削を反映する→ `latexdiff-vc` を使って `main` ブランチとの差分PDFを出力する
-- Git/GitHubのわかりやすい書籍やウェブサイト
+をやれば，以下にまとめたような用途でGitHubを使うには十分だと思います．
+
+#### 研究コードの管理
+
+GitHubを使って
+
+1. 「正常に動く」コードを `master/main` ブランチに置く．
+2. 別ブランチで新しい機能の実装やリファクタリング，バグを取るコードを書く．
+3. 新しいコードが正常に動作することを確認したら `master/main` ブランチにマージする．
+
+を繰り返せば，常に正常に動作するコードを維持しつつ開発を進めることができます．
+また，
+
+- [Issue](https://docs.github.com/ja/issues)や[Pull Request](https://docs.github.com/ja/pull-requests)を使ってバグ報告や新たに実装したい機能を管理する．
+- [GitHub Actions](https://docs.github.com/ja/actions)を使ってテストやビルドをおこないつつコードを開発する．
+- [Wiki](https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about-wikis)を使ってコードのドキュメントを維持する
+
+など，GitHubの豊富な機能を使うとより効率的な開発ができるので，ぜひチャレンジしてみてください．
+
+#### 研究ノートの管理
+
+日々の研究ノートを[Markdown](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)で書いてGitHubでホストしておくと便利です．
+Markdownとは「文書を記述するための軽量マークアップ言語のひとつ（Wikipedia）」  で，
+
+- プレーンテキストで書ける（=Gitで管理できる）
+- 見出し/箇条書き/強調表示など文章の構造化が容易である（WYSIWYGでない）
+- 表/数式/図の挿入など拡張も可能である
+- HTMLやPDFなどさまざまな形式へ変換できる
+
+といった特徴をもちます．
+この文章もMarkdownで書いたものをGitHubでホストしています．
+この利点を活かし，例えば：
+
+- 指導教員をcollaboratorに入れておき，進捗を可視化する．
+- 研究ノートを抜粋したものを[Marp](https://marp.app/)や[Pandoc](https://pandoc.org/)でスライド化し，進捗報告の資料にする．
+- 日頃から書き溜めておいた内容を卒論や修論のLaTeXにコピペする．
+
+といった使い方が考えられます．
+
+#### 論文執筆
+
+LaTeXで論文を執筆する際も，GitHubを使って
+
+1. Issueに書くべき内容を書き出し，執筆計画を建てる．
+2. 別ブランチで執筆を進めたり共著者からの添削を反映する．
+3. `latexdiff-vc` を使って `master/main` ブランチとの差分PDFを出力する．
+4. 満足いくものになったら `master/main` ブランチにマージする．
+
+というワークフローを踏むことで効率的な執筆が可能になります．
+GitHubを利用した卒論・修論執筆について，
+
+- [立命館大学情報理工学部サイバーセキュリティ研究室：卒業論文のためのGitHub運用法](https://cysec.ise.ritsumei.ac.jp/2024/01/08/thesis-git-repository/)
+- [komatsuna4747：Git/GitHubを用いて論文を執筆する](https://komatsuna4747.github.io/how-to-use-git/writing-paper.html)
+
+などが参考になると思います．
 
 ----
 
