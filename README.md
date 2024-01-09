@@ -87,15 +87,24 @@ TBA：
 - 「モダンな」数値計算ソフトウェアの開発環境
 - サーバの使い方（ログイン/ファイル移動/計算ジョブの投入/...）
 
-数値計算をする際のtipsとして以下を挙げておきます：
+#### 数値計算のtips
 
+- プログラミング言語ごとのtipsは[ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)にまとめています．
 - ポスト処理でデータを解析するコードとデータをプロットするコードは分割する．
-  - 論文を書く段階になると図の微妙な修正を何度もすることになるので，そのたびにデータの解析からやり直していては時間がかかる．
-  - ポスト解析を終え，「このデータをプロットすればよい」段階で一旦データを吐いておき，別のスクリプトでそれを読み込んでプロットする．
-    - Pythonなら `.npy` ，MATLABなら `.mat` など，各プログラミング言語で効率的に扱えるバイナリ形式があるのでそれを使う．
+
+  論文を書く段階になると図の微妙な修正を何度もすることになるので，そのたびにデータの解析からやり直していては時間がかかります．
+  そこで，ポスト解析を終えて「このデータをプロットすればよい」段階で一旦データを吐いておき，別のスクリプトでそれを読み込んでプロットすると，グラフの微修正が容易です．
+  Pythonなら `.npy` ，MATLABなら `.mat` など，各プログラミング言語で効率的に扱えるバイナリ形式があるのでそれを使うとよいでしょう．
 - 色覚多様性に配慮したカラーマップを使う．
-  - とくにMATLABは[Jetカラーマップ](https://jp.mathworks.com/help/matlab/ref/jet.html)が規定でひどい．
-  - [Perceptually Uniform Sequential Colormap](https://matplotlib.org/stable/users/explain/colors/colormaps.html#sequential)を使う．
+
+  とくにMATLABのデフォルトは[Jetカラーマップ](https://jp.mathworks.com/help/matlab/ref/jet.html)という明度が線形に変化せず，赤と緑が同時に使われているひどいものです．
+  できる限り[Perceptually Uniform Sequential Colormap](https://matplotlib.org/stable/users/explain/colors/colormaps.html#sequential)を使うようにしてください．
+  なお，カラーマップの選び方と色覚多様性については，例えば以下の文献を参照してください：
+
+  - [Crameri et al., "The misuse of colour in science communication", Nat. Comm. (2020)](https://doi.org/10.1038/s41467-020-19160-7)
+  - [森下，「科学的・非科学的カラーマップ」，測地学会誌（2021）](https://doi.org/10.11366/sokuchi.67.29)
+  - [文部科学省，「色覚に関する指導の資料」](https://www.pref.osaka.lg.jp/attach/2470/00004402/sikikaku.pdf)
+- TBA
 
 ### 研究や論文執筆でのGit/GitHubの使い方
 
