@@ -100,7 +100,7 @@
 - Julia：テスト計算や簡単なモデルの数値計算とポスト解析
 
 ですので，これらを使うのであればサポートができます．
-その三言語の勉強方法について，[プログラミングの勉強](https://github.com/ryo-ARAKI/blob/master/howto_learn_coding.md)にまとめているので参照してください．
+その三言語の勉強方法について，[プログラミングの勉強](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/howto_learn_coding.md)にまとめているので参照してください．
 
 > [!NOTE]
 > TBA：
