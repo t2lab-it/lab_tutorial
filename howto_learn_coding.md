@@ -4,10 +4,12 @@
 
 目次：
 
+<!--
 - [プログラミングの勉強](#プログラミングの勉強)
   - [Julia](#julia)
   - [Fortran](#fortran)
   - [Python](#python)
+ -->
 
 ## Julia
 
@@ -19,8 +21,6 @@ Juliaの勉強法としては，まず
 
 
 - [JuliaLang.org: Getting Started](https://docs.julialang.org/en/v1/manual/getting-started/)
-
-  公式ドキュメントのチュートリアル
 - [進藤 裕之，佐藤 建太，「1から始めるJuliaプログラミング」，コロナ社（2020）](https://www.coronasha.co.jp/np/isbn/9784339029055/)
 
   ただしJulia v1.2というやや古いバージョンに基づいて書かれていることに注意してください．
@@ -92,8 +92,8 @@ Fortranを使って大規模な並列数値計算を実行したい人は，ま�
 Pythonを使った数値計算や可視化・グラフ作成については膨大な書籍やWebサイトが存在します．
 私が勉強した本よりも新しいバージョンのPythonに基づいた良質なコンテンツがあるはずなので，自分に合うものを選んで勉強してください（良いものを見つけたら教えてください）．
 
-- Numpy，Scipy，Pandasなど数値計算，データ処理のためのライブラリ
-- Matplotlibなどデータ可視化のためのライブラリ
+- [Numpy](https://numpy.org/ja/)，[Scipy](https://scipy.org/)，[Pandas](https://pandas.pydata.org/)など数値計算，データ処理のためのライブラリ
+- [Matplotlib](https://matplotlib.org/)などデータ可視化のためのライブラリ
 
 を勉強すると良いと思います．
 とくに数値流体解析については
