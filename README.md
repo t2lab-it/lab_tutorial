@@ -212,38 +212,60 @@ GitHubを利用した卒論・修論執筆について，
 あるトピックの先行研究を知りたいときは以下の手順を踏むとよい：
 
 1. 研究室の中で探す
-   1. 知っていそうな先輩に聞く：その分野の重要な研究者や「分野の流れ」を教えてもらえるかも．
+   1. 知っていそうな先輩に聞く：その分野の重要な研究者・論文や「分野の流れ」を教えてもらえるかもしれません．
    2. 研究室の既発表論文を調べる：わからないときに教員や先輩に訪ねやすい．
    3. 関連する分野の教科書を読む：その分野を創始した論文や重要な発展に寄与した原著論文が引用されているはず．
 2. レビュー論文を探す
-   - レビュー論文：原著論文と教科書の中間で「あるトピックの過去十年〜数十年の進展」をまとめた論文で分野の概観をつかみやすい．
-   - 流体力学分野だとまずはAnnual Review of Fluid Mechanicsで探すとよい．
-   - 他にもAnnual Review of Condensed Matter Physics，Nature Reviews Physics，Review of Modern Physics，Physics Reports，...など．
-3. 原著論文を探す
-   - 流体力学分野だとJournal of Fluid Mechanics，Physical Review Fluids，Physics of Fluids，Fluid Dynamics Researchなどが定評のある雑誌．
-   - 他にもPhysical Review Letters/E/Research，Physica D，New Journal of Physics，...など．
+
+   レビュー論文：原著論文と教科書の中間の立ち位置で「あるトピックの過去数年〜数十年の進展」をまとめた論文のこと．
+   分野の概観をつかみやすいので，教科書の次には（あるいは教科書がないような分野なら最初に）読むのがおすすめです．
+   流体力学分野だとまずは[Annual Review of Fluid Mechanics](https://www.annualreviews.org/journal/fluid)で探すとよいでしょう．
+   分野が違う人は[Annual Reviews系列](https://www.annualreviews.org/action/showPublications)から探すとよいと思います．
+   他に流体力学（を含む物理学）系のレビューが載る雑誌には，
+
+   - Annual Reviews系列の[Annual Review of Condensed Matter Physics](https://www.annualreviews.org/journal/conmatphys)
+   - Nature系列の[Nature Reviews Physics](https://www.nature.com/natrevphys/)
+   - American Physics Society（APS）系列の[Review of Modern Physics](https://journals.aps.org/rmp/)
+   - Elsevier系列の[Physics Reports](https://www.sciencedirect.com/journal/physics-reports)
+
+   などがあります．
+1. 原著論文を探す
+
+   流体力学分野で定評のある雑誌には
+
+   - Cambridge University Pressの[Journal of Fluid Mechanics](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics)
+   - APSの[Physical Review Fluids](https://journals.aps.org/prfluids/)
+   - American Institute of Physics（AIP）の[Physics of Fluids](https://pubs.aip.org/aip/pof)
+   - 日本流体力学会の[Fluid Dynamics Research](https://iopscience.iop.org/journal/1873-7005)
+
+   などがあります．
+   <!-- Physical Review Letters/Physical Review E/Physical Review Research/Physica D/New Journal of Physics/... -->
 
 異なる論文雑誌から横断的に論文を探せるサイトは：
 
 - [Google scholar](https://scholar.google.co.jp/)
-  - 「その論文を引用した論文」を網羅的に探しやすい．
-  - `.bib` ファイルも（出版社のサイトより）使いやすいと思う．
-  - お金を払わないと読めない論文もなんやかんや本文を読めるリンクが辿れたりする．
+
+  「その論文を引用した論文」を網羅的に探しやすく，LaTeXで文献を引用する際に必要な `.bib` ファイルも（出版社のサイトでダウンロードできるものより）使いやすいと思う．
+  お金を払わないと読めない論文もなんやかんや本文を読めるリンクが辿れたりします．
 - [arXiv](https://arxiv.org/)
-  - 査読を経て出版される前のプレプリントが読めるが，「正式に出版された原稿」ではないことに注意する．
-  - お金を払わないと読めない論文も草稿段階の原稿がアップされていたりする．
-  - 流体力学関連は[physics.flu-dyn](https://arxiv.org/list/physics.flu-dyn/recent)をみればよい．
-  - [arXiv Xplorer](https://arxivxplorer.com/)で効率的に検索できる．
+
+  査読を経て出版される前のプレプリントが読めますが，「正式に出版された原稿」ではないことに注意しましょう（出版された論文では細部が変わっていることがよくあります）．
+  お金を払わないと読めない雑誌の論文も草稿段階の原稿がアップされていたりするので，うまく使いましょう．
+  [arXiv Xplorer](https://arxivxplorer.com/)で効率的に検索できます．
+
+  流体力学関連は[physics.flu-dyn](https://arxiv.org/list/physics.flu-dyn/recent)の新着論文をチェックしていればよいです．
 - [Perplexity](https://www.perplexity.ai/)，[Elicit](https://elicit.org/)，[Typeset](https://typeset.io/)，[Consensus](https://consensus.app/)
-  - 知りたいトピックを尋ねると **存在する** 文献を挙げてくれる．
-  - ChatGPTは存在しない文献を紹介してくるので論文探しには使わないこと．
-  - 他にもいろいろ便利なサービスが出てきているはずなので，見つけたら教えてください．
+
+  知りたいトピックを尋ねると **存在する** 文献を挙げてくれるAIを使ったウェブサイトです．
+  なお，ChatGPTは存在しない文献を実在するかのように紹介してくるので，論文探しには使わないようにしましょう．
+  他にもいろいろ便利なサービスが出てきているはずなので，見つけたら教えてください．
 - [Connected Papers](https://www.connectedpapers.com/)
-  - 注目したい論文を入力すると，関連論文の相関図を出してくれる．
-  - 無料版だとかなり厳しい回数制限があるので注意．
+
+  論文を入力すると，その関連論文の相関図を出してくれます．
+  そのトピックの研究を概観したいときに便利ですが，無料版だとかなり厳しい回数制限があるので注意しましょう．
 
 新しい論文を効率的にチェックするためには，上に挙げた雑誌の新着論文をRSS通知で毎日確認するとよいです．
-研究室のチャットツール（Slack，Teams等）にRSS通知をリンクすると，チャット上で議論することもできて有用だと思います（参考：TBA）．
+研究室のチャットツール（Slack，Teams等）にRSS通知をリンクすると，チャット上で議論することもできて有用だと思います（参考：[Slack に RSS フィードを追加する](https://slack.com/intl/ja-jp/help/articles/218688467-Slack-%E3%81%AB-RSS-%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B)）．
 
 ### 論文の読み方
 
