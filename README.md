@@ -49,7 +49,7 @@
 理論や数値計算系，とくに一日中サーバやスパコンにつないでいるのであれば，研究用のPCをLinuxにするのは考慮に値する選択肢だと思います（が，バイアスがかかっているかもしれません）．
 実験系は装置の制御ソフトがWindowsのみだったりするので要注意です．
 
-私のPCの初期設定やソフトウェアの設定は[Ubuntu日本語Remixの初期設定とソフトウェアのインストール・設定](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/PC_initial_setup.md)にまとめています．
+私のPCの初期設定やソフトウェアの設定は[Ubuntu日本語Remixの初期設定とソフトウェアのインストール・設定](PC_initial_setup.md)にまとめています．
 また，ソフトウェアの設定ファイルはGistで管理しており，その一覧は以下にまとめています：
 
 <details>
@@ -100,7 +100,7 @@
 - Julia：テスト計算や簡単なモデルの数値計算とポスト解析
 
 ですので，これらを使うのであればサポートができます．
-その三言語の勉強方法について，[プログラミングの勉強](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/howto_learn_coding.md)にまとめているので参照してください．
+その三言語の勉強方法について，[プログラミングの勉強](howto_learn_coding.md)にまとめているので参照してください．
 
 > [!NOTE]
 > TBA：
@@ -535,8 +535,8 @@ Gist で管理しているLaTeXテンプレートのリンク集を以下にま�
 >
 > 執筆した卒業論文や修士論文，その口頭試問や公聴会で使うスライドを指導教員に見てもらう前に確認しておくべきことのチェックリスト：
 >
-> - [卒業論文・修士論文の自己チェックリスト](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/selfcheck_thesis.md)
-> - [卒業論文・修士論文発表スライドの自己チェックリスト](https://github.com/ryo-ARAKI/lab_tutorial/blob/master/selfcheck_defence.md)
+> - [卒業論文・修士論文の自己チェックリスト](selfcheck_thesis.md)
+> - [卒業論文・修士論文発表スライドの自己チェックリスト](selfcheck_defence.md)
 
 ### 投稿論文の書き方
 
