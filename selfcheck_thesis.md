@@ -209,11 +209,10 @@
 - [akira-okumura：修士論文 LaTeX テンプレート](https://github.com/akira-okumura/MasterThesisTemplate)
   - チェックリストではなく論文のLaTeXテンプレートだが，論文の書き方についてもとてもよくまとまっているのでぜひ読んでおくとよい．
   - とくに「§6 色覚多様性と作図」を必ず読んでおくこと．
-- [後藤 祐一，checklists](https://github.com/yuichigoto/checklists)
-  - 初稿を作成する際，「卒業論文・修士論文自己チェックリスト」をとても参考にした．
-- [@tttamaki，卒論・修論チェックリスト](https://qiita.com/tttamaki/items/f553e4cb9f4f08cc8872)
-  - 本チェックリストよりも充実したリストになっているので，論文の提出前に一読するとよい．
 - [伊藤貴之，修士論文の作り方](https://www.is.ocha.ac.jp/~itot/message/msthesis.html)
   - チェックリストというよりはよりメタ的な点に力点を置いた文章．このチェックリストに欠けている視点で非常に参考になるのでぜひ読んでおくとよい．ページ冒頭にある同様の文章へのリンクも役に立つ．
+- [後藤 祐一，checklists](https://github.com/yuichigoto/checklists)
+- [山本浩司研究室，修士論文提出前の原稿チェックリスト内容編](https://docs.google.com/document/d/1YTgCme-9dwt2woAEOVX3MfOJutP2CgiJbEKGQi5nM3c/edit#heading=h.pfz4xdrzkyal)
+- [@tttamaki，卒論・修論チェックリスト](https://qiita.com/tttamaki/items/f553e4cb9f4f08cc8872)
 - [金森由博，論文執筆のためのチェックリスト](http://kanamori.cs.tsukuba.ac.jp/docs/writing_paper_checklist.pdf)
-  - 本チェックリストよりも充実したリストになっている．特に「E. Introduction/序論」，「F. Related Work/関連研究」のように章ごとにチェックするべき内容がまとめられており，このチェックリストに欠けている内容のためぜひ参考にするとよい．
+  - いずれも本チェックリストを作成する際に参考にした．
