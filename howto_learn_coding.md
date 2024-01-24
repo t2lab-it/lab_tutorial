@@ -2,9 +2,9 @@
 
 ここでは，プログラミングの具体的な勉強方法についてまとめます．
 
+<!--
 目次：
 
-<!--
 - [プログラミングの勉強](#プログラミングの勉強)
   - [Julia](#julia)
   - [Fortran](#fortran)
@@ -51,7 +51,7 @@ Juliaの勉強法としては，まず
 
 - [佐藤 建太，「Juliaプログラミング大全」，講談社（2023）](https://www.kspub.co.jp/book/detail/5318195.html)
 - [後藤 俊介，「実践Julia入門」，技術評論社（2023）](https://gihyo.jp/book/2023/978-4-297-13350-4)
-- [九州大学，「数学と物理におけるJuliaの活用」（2023）](https://joint.imi.kyushu-u.ac.jp/post-9030/)
+- [九州大学，「数学と物理におけるJuliaの活用」（2023）](https://joint.imi.kyushu-u.ac.jp/post-14811/)とその[動画](https://joint.imi.kyushu-u.ac.jp/post-9030/)
 <!--
 - 降籏 [数値計算法基礎 (2023)](http://www.cas.cmc.osaka-u.ac.jp/~paoon/Lectures/2023-8Semester-NA-basic/)
 - Hiroi [お気楽 Julia プログラミング超入門](http://www.nct9.ne.jp/m_hiroi/light/julia.html)
