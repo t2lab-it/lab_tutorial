@@ -212,12 +212,12 @@ GitHubを利用した卒論・修論執筆について，
 そこで，学生さんには乱流と情報理論を勉強してもらうことになります．
 それぞれ：
 
-- [乱流の勉強](https://github.com/ryo-ARAKI/blob/master/howto_learn_turbulence.md)
-- [情報理論の勉強](https://github.com/ryo-ARAKI/blob/master/howto_learn_information_theory.md)
+- [乱流の勉強](howto_learn_turbulence.md)
+- [情報理論の勉強](howto_learn_information_theory.md)
 
 を参照してください．
 また，研究手段としては理論解析と数値計算を主とします（修士課程までは実験もやっていたのでまたやりたいところですが，いまのところ具体的なプロジェクトはありません）．
-プログラミングについてはすでに[数値計算コードの書き方](#数値計算コードの書き方)で述べましたし，いくつかの言語の具体的な勉強方法は[プログラミングの勉強](https://github.com/ryo-ARAKI/blob/master/howto_learn_coding.md)を参照してください．
+プログラミングについてはすでに[数値計算コードの書き方](#数値計算コードの書き方)で述べましたし，いくつかの言語の具体的な勉強方法は[プログラミングの勉強](howto_learn_coding.md)を参照してください．
 
 ### 論文の探し方
 
