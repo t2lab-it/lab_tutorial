@@ -11,6 +11,13 @@ Release:	22.04
 Codename:	jammy
 ```
 
+## OSをWindowsからUbuntuに変更する
+
+1. すべての機能が正常に動作していることを確認する
+   - キーボード，カメラ，指紋認証，Wi-Fi，Bluetooth，...
+2. BIOSを最新版に更新する
+3. Ubuntuの最新のLTSをインストールする
+
 ## OS設定
 
 1. システムを更新して再起動する
