@@ -117,17 +117,20 @@ Codename:	jammy
   christian-kohler.path-intellisense
   donjayamanne.githistory
   eamodio.gitlens
-  Equinusocio.vsc-material-theme
+  equinusocio.vsc-material-theme
   equinusocio.vsc-material-theme-icons
   esbenp.prettier-vscode
   fortran-lang.linter-gfortran
-  IBM.output-colorizer
-  James-Yu.latex-workshop
+  ibm.output-colorizer
+  james-yu.latex-workshop
   jprestidge.theme-material-theme
   julialang.language-julia
+  kirozen.wordcounter
+  marp-team.marp-vscode
   monokai.theme-monokai-pro-vscode
   mosapride.zenkaku
-  MS-CEINTL.vscode-language-pack-ja
+  ms-ceintl.vscode-language-pack-ja
+  ms-python.debugpy
   ms-python.python
   ms-python.vscode-pylance
   ms-toolsai.jupyter
@@ -141,7 +144,7 @@ Codename:	jammy
   ms-vscode.cpptools
   ms-vscode.remote-explorer
   oderwat.indent-rainbow
-  PKief.material-icon-theme
+  pkief.material-icon-theme
   sgryjp.japanese-word-handler
   shd101wyy.markdown-preview-enhanced
   streetsidesoftware.code-spell-checker
