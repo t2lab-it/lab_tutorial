@@ -143,6 +143,7 @@ Codename:	jammy
   ms-vscode.atom-keybindings
   ms-vscode.cpptools
   ms-vscode.remote-explorer
+  nvarner.typst-lsp
   oderwat.indent-rainbow
   pkief.material-icon-theme
   sgryjp.japanese-word-handler
