@@ -42,7 +42,7 @@ Codename:	jammy
    sudo apt -y install terminator  # かっこいいターミナルエミュレータ
    sudo apt -y install fish  # モダンなシェル
    sudo apt -y install ubuntu-restricted-extras  # フォント・動画再生用コーデック
-   sudo apt install -y fonts-ipafont && fc-cache -fv  # IPAフォント
+   sudo apt -y install fonts-ipafont && fc-cache -fv  # IPAフォント
    sudo apt -y install gnome-tweaks  # 詳細設定
    sudo apt -y install gnome-shell-extension-manager  # Gnome Extensions
    sudo apt -y purge thunderbird*  # デフォルトのメーラー
@@ -158,3 +158,4 @@ Codename:	jammy
 
 - [金子邦彦研究室：Ubuntu 22.04 のインストール直後の設定](https://www.kkaneko.jp/tools/ubuntu/ubuntu_setup.html)
 - [@karaage0703：Ubuntuをちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554)
+- 他にもいろいろなウェブサイトでLinuxの設定が紹介されているが，各項目が自分にとって有益かどうかをよく考慮してから実行すること．
