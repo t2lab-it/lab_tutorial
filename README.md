@@ -591,7 +591,8 @@ Natureの[How to construct a _Nature_ summary paragraph](https://www.nature.com/
 #### 本文の書き方
 
 > [!NOTE]
-> TBA
+>
+> - 学位論文とは違う点
 
 ###  奨学金・研究費申請書の書き方
 
@@ -607,6 +608,9 @@ Natureの[How to construct a _Nature_ summary paragraph](https://www.nature.com/
 ----
 
 ## リンク集
+
+研究者になろうと思う人へ，寺田寅彦の[「科学者とあたま」](https://www.aozora.gr.jp/cards/000042/files/2359_13797.html)という短いエッセイを紹介しておきます．
+これに限らず，寺田寅彦や中谷宇吉郎，ロゲルギストの随筆は非常におすすめです．
 
 以下の博士後期課程を終えた先達のブログ記事も参考になると思います：
 
