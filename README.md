@@ -432,10 +432,12 @@ Gist で管理しているLaTeXテンプレートのリンク集を以下にま�
 
  <!-- `howto_prepare_conference_presentation.md` -->
 
+研究がある程度進展したら，最新の結果を共有して議論するために学会で発表しましょう．
+最初は身内の研究室で開催する内輪の研究会や登壇者を学生に限定した若手セッションで経験を積み，順次より大規模な学会や国際学会を経験できると素晴らしいです．
+
 > [!NOTE]
 > TBA：
 >
-> - なんのために学会発表をするのか？
 > - 発表する学会をどう決めるか？
 
 #### 発表タイトルの決め方
@@ -593,6 +595,7 @@ Natureの[How to construct a _Nature_ summary paragraph](https://www.nature.com/
 > [!NOTE]
 >
 > - 学位論文とは違う点
+>   - 文章や図や数式から冗長さを除去する
 
 ###  奨学金・研究費申請書の書き方
 
@@ -612,6 +615,7 @@ Natureの[How to construct a _Nature_ summary paragraph](https://www.nature.com/
 研究者になろうと思う人へ，寺田寅彦の[「科学者とあたま」](https://www.aozora.gr.jp/cards/000042/files/2359_13797.html)という短いエッセイを紹介しておきます．
 これに限らず，寺田寅彦や中谷宇吉郎，ロゲルギストの随筆は非常におすすめです．
 
+<!--
 以下の博士後期課程を終えた先達のブログ記事も参考になると思います：
 
 - [A Survival Guide to a PhD](https://karpathy.github.io/2016/09/07/phd/)
@@ -620,3 +624,4 @@ Natureの[How to construct a _Nature_ summary paragraph](https://www.nature.com/
 - [What not to do in graduate school](https://doi.org/10.1038/d41586-019-02255-7)
 - [Lessons from my PhD](https://austinhenley.com/blog/lessonsfrommyphd.html)
 - [10 Tips for Research and a PhD](https://www.ruder.io/10-tips-for-research-and-a-phd/)
+ -->
