@@ -98,7 +98,7 @@ Pythonを使った数値計算や可視化・グラフ作成については膨�
 を勉強すると良いと思います．
 とくに数値流体解析については
 
-- [CFD Python](https://github.com/barbagroup/CFDPython)
+- [CFD Python](https://github.com/barbagroup/CFDPython)（解説論文[Barba and Forsyth, Journal of Open Source Education (2018).](https://doi.org/10.21105/jose.00021)）
 
 に追加機能を加えたりリファクタリングしつつ再実装するのがとてもいい勉強になると思います．
 
