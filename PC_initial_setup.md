@@ -1,4 +1,6 @@
-# Ubuntu日本語Remixの初期設定とソフトウェアのインストール・設定
+# Ubuntuの初期設定とソフトウェアのインストール・設定
+
+※完全な手順書ではなく備忘録に近いものなので，
 
 実行環境
 
@@ -6,9 +8,9 @@
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID:	Ubuntu
-Description:	Ubuntu 22.04.3 LTS
-Release:	22.04
-Codename:	jammy
+Description:	Ubuntu 23.10
+Release:	23.10
+Codename:	mantic
 ```
 
 ## OSをWindowsからUbuntuに変更する
@@ -16,7 +18,10 @@ Codename:	jammy
 1. すべての機能が正常に動作していることを確認する
    - キーボード，カメラ，指紋認証，Wi-Fi，Bluetooth，...
 2. BIOSを最新版に更新する
-3. Ubuntuの最新のLTSをインストールする
+3. WindowsのBitLockerドライブ暗号化を解除し，BIOSでセキュアブートを無効化しておく
+5. Ubuntuの最新版をインストールする
+   - [Ubuntu Desktop](https://jp.ubuntu.com/download)もしくは[Ubuntu Desktop 日本語 Remix](https://www.ubuntulinux.jp/download/ja-remix)
+   - 23.10からデフォルトが従来の「最小インストール」になった
 
 ## OS設定
 
@@ -31,36 +36,41 @@ Codename:	jammy
    sudo shutdown -r now
    ```
 
-2. 必要なソフトウェアを追加する・不要なソフトウェアを削除する
+2. 必要なソフトウェアを追加する
 
    ```linux
-   sudo apt -y install git
-   sudo apt -y install curl
-   sudo apt -y install vim
+   # 必須なもの
+   sudo apt -y install git  # バージョン管理
+   sudo apt -y install vim  # CUIエディタ
+   sudo apt -y install curl # データ送受信
+   sudo apt -y install cmake  # ビルドツール
+   sudo apt -y install build-essential  # ビルドツール
    sudo apt -y install evince  # PDFビューワ
    sudo apt -y install ffmpeg  # 画像処理
-   sudo apt -y install terminator  # かっこいいターミナルエミュレータ
-   sudo apt -y install fish  # モダンなシェル
    sudo apt -y install ubuntu-restricted-extras  # フォント・動画再生用コーデック
-   sudo apt -y install fonts-ipafont && fc-cache -fv  # IPAフォント
    sudo apt -y install gnome-tweaks  # 詳細設定
    sudo apt -y install gnome-shell-extension-manager  # Gnome Extensions
-   sudo apt -y purge thunderbird*  # デフォルトのメーラー
+   # 個人の好み
+   sudo apt -y install terminator  # かっこいいターミナルエミュレータ
+   sudo apt -y install fish  # モダンなシェル
+   sudo apt -y install peco  # CUI上のフィルタ
+   sudo apt -y install fonts-ipafont fonts-ricty-diminished && fc-cache -fv  # IPAフォント
+   sudo apt -y install exa  # lsの代替
+   sudo apt -y install unar  # ファイル解凍
+   curl https://sh.rustup.rs -sSf | sh  # Rust
+   cargo install starship --locked  # プロンプト装飾
    ```
 
 3. ホームディレクトリ下の日本語ディレクトリを英語に変換する
 
    ```linux
+   # 非日本語 Remixをダウンロードした際は不要
    $ LANG=C xdg-user-dirs-gtk-update
    ```
 
-4. 日本語入力のため `fcitx-mozc` をインストールし，設定する
-
-   ```linux
-   $ sudo apt -y install fcitx-mozc
-   $ im-config -n fcitx
-   $ fcitx-configtool mozc &
-   ```
+4. 日本語入力を設定する
+   - 参考：[Ubuntu 20.04 LTS：日本語環境にする](https://www.server-world.info/query?os=Ubuntu_20.04&p=japanese)
+     - 注意：Mozcのデフォルト入力法を「直接入力」にするには `.config/mozc/ibus_config.textproto` に `active_on_launch: True` と追記すればよい．ソースを書き換えて再ビルドする必要はない
 
 5. 時計合わせのサーバをNICTへ変更する
 
@@ -78,7 +88,7 @@ Codename:	jammy
    - HTMLカラーコードは例えば[日本の伝統色](https://nipponcolors.com/)から探す
 
    ```linux
-   $ gsettings set org.gnome.desktop.background picture-uri ''
+   $ gsettings set org.gnome.desktop.background picture-options none
    $ gsettings set org.gnome.desktop.background color-shading-type 'solid'
    $ gsettings set org.gnome.desktop.background primary-color '#268785'  # 青碧
    ```
@@ -97,19 +107,19 @@ Codename:	jammy
    - フォント：ドキュメントのテキスト：IPA Pゴシック Regular 11
    - フォント：等幅テキスト：Monospace Regular 13
    - フォント：レガシーなウィンドウタイトル：IPA Pゴシック Bold 11
+10. GitHubアカウントの認証
+    - [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)での認証がとても便利
 
 ### To Do
 
-1. SSHの設定
-   - 鍵の生成，登録
-2. Git/GitHub
-   - SSHでなくGitHub CLIで設定する
+1. SSH鍵の生成と登録
+   - ed25519プロトコル
 
 ## VSCodeのインストールと設定
 
 - snap版ではなくdeb版をインストールすること（前者だと日本語環境が作れない）
-- 設定ファイルは[ソフトウェアの設定ファイル](https://github.com/ryo-ARAKI/TIL?tab=readme-ov-file#%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB)を参照せよ
-- 導入している拡張機能は以下の通り：
+- 設定ファイルはREADMEにまとめてある
+- 導入している拡張機能は以下の通り．先頭に `code --install-extension` をつけるとターミナルからインストールできる：
 
   ```linux
   $ code --list-extensions
