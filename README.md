@@ -629,6 +629,7 @@ Natureの[How to construct a _Nature_ summary paragraph](https://www.nature.com/
 > TBA：
 >
 > - 「書けと言われていること」を書く．
+> - 規定の枠・文字数の9割以上を埋める．
 > - 模式図を効果的に使う．
 > - 審査員と共有できる前提・背景分野の知識を調べる．
 > - 自分がもらっていた奨学金のリンク
