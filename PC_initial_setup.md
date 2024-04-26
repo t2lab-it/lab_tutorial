@@ -60,6 +60,7 @@ Codename:	noble
    . "$HOME/.cargo/env"  # Rustのパスを通す
    cargo install starship --locked  # プロンプト装飾
    cargo install exa  # lsの代替
+   cargo install git-delta  # gitの差分出力
    ```
 
    TeXLiveはすごく時間がかかるので暇なときにやる
@@ -126,6 +127,7 @@ Codename:	noble
    ウィンドウ：ホバーでフォーカスを当てる
    キーボードとマウス：マウスクリックのエミュレーション：無効
 10. [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)を使ったGitHubアカウントの認証
+
    ```bash
    sudo apt install gh
    gh auth login
@@ -133,6 +135,7 @@ Codename:	noble
    - Personal access tokens (classic)で最小権限（'repo', 'read:org', 'admin:public_key'）を選択してtokenを生成する
    - To do：Fine-grained tokensでの設定方法を調べる
    - To do：差分の表示方法を変える
+11. Gitの設定
 
    ```bash
    git config --global user.email "you@example.com"
