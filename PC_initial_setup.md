@@ -1,16 +1,16 @@
 # Ubuntuの初期設定とソフトウェアのインストール・設定
 
-※完全な手順書ではなく備忘録に近いものなので，
+※完全な手順書ではなく備忘録に近いものなので，自身の環境に合わせて設定してください．
 
 実行環境
 
-```linux
+```bash
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID:	Ubuntu
-Description:	Ubuntu 23.10
-Release:	23.10
-Codename:	mantic
+Description:	Ubuntu 24.04 LTS
+Release:	24.04
+Codename:	noble
 ```
 
 ## OSをWindowsからUbuntuに変更する
@@ -21,13 +21,12 @@ Codename:	mantic
 3. WindowsのBitLockerドライブ暗号化を解除し，BIOSでセキュアブートを無効化しておく
 5. Ubuntuの最新版をインストールする
    - [Ubuntu Desktop](https://jp.ubuntu.com/download)もしくは[Ubuntu Desktop 日本語 Remix](https://www.ubuntulinux.jp/download/ja-remix)
-   - 23.10からデフォルトが従来の「最小インストール」になった
 
 ## OS設定
 
 1. システムを更新して再起動する
 
-   ```linux
+   ```bash
    sudo apt -y update
    sudo apt -yV upgrade
    sudo apt -yV dist-upgrade
@@ -38,7 +37,7 @@ Codename:	mantic
 
 2. 必要なソフトウェアを追加する
 
-   ```linux
+   ```bash
    # 必須なもの
    sudo apt -y install git  # バージョン管理
    sudo apt -y install vim  # CUIエディタ
@@ -55,74 +54,97 @@ Codename:	mantic
    sudo apt -y install fish  # モダンなシェル
    sudo apt -y install peco  # CUI上のフィルタ
    sudo apt -y install fonts-ipafont fonts-ricty-diminished && fc-cache -fv  # IPAフォント
-   sudo apt -y install exa  # lsの代替
    sudo apt -y install unar  # ファイル解凍
-   curl https://sh.rustup.rs -sSf | sh  # Rust
+   curl -fsSL https://install.julialang.org | sh  # Julia
+   curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path  # Rust
+   . "$HOME/.cargo/env"  # Rustのパスを通す
    cargo install starship --locked  # プロンプト装飾
+   cargo install exa  # lsの代替
    ```
 
-3. ホームディレクトリ下の日本語ディレクトリを英語に変換する
+   TeXLiveはすごく時間がかかるので暇なときにやる
 
-   ```linux
-   # 非日本語 Remixをダウンロードした際は不要
-   $ LANG=C xdg-user-dirs-gtk-update
+   ```bash
+   sudo apt install texlive-full
    ```
 
-4. 日本語入力を設定する
+3. （`.deb` から）必要なソフトウェアを追加する
+
+   Chrome
+   ```bash
+   cd Downloads
+   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   sudo dpkg -i google-chrome-stable_current_amd64.deb
+   ```
+
+   - VSCode：[公式サイトから](https://code.visualstudio.com/Download)deb版をインストールする（snap版だと日本語環境が作れない）
+     - To Do： `curl` や `wget` を使う方法を調べる
+
+4. ホームディレクトリ下の日本語ディレクトリを英語に変換する
+   ※日本語 Remixをダウンロードした際のみ
+
+   ```bash
+   LANG=C xdg-user-dirs-gtk-update
+   ```
+
+5. 日本語入力を設定する
    - 参考：[Ubuntu 20.04 LTS：日本語環境にする](https://www.server-world.info/query?os=Ubuntu_20.04&p=japanese)
      - 注意：Mozcのデフォルト入力法を「直接入力」にするには `.config/mozc/ibus_config.textproto` に `active_on_launch: True` と追記すればよい．ソースを書き換えて再ビルドする必要はない
 
-5. 時計合わせのサーバをNICTへ変更する
+6. 時計合わせのサーバをNICTへ変更する
 
-   ```linux
-   $ sudo sed -i 's/#NTP=/NTP=ntp.nict.jp/g' /etc/systemd/timesyncd.conf
-   ```
-
-6. デスクトップにゴミ箱を表示する
-
-   ```linux
-   $ gsettings set org.gnome.shell.extensions.ding show-trash true
+   ```bash
+   sudo sed -i 's/#NTP=/NTP=ntp.nict.jp/g' /etc/systemd/timesyncd.conf
    ```
 
 7. デスクトップ背景を単色にする
    - HTMLカラーコードは例えば[日本の伝統色](https://nipponcolors.com/)から探す
 
-   ```linux
-   $ gsettings set org.gnome.desktop.background picture-options none
-   $ gsettings set org.gnome.desktop.background color-shading-type 'solid'
-   $ gsettings set org.gnome.desktop.background primary-color '#268785'  # 青碧
+   ```bash
+   gsettings set org.gnome.desktop.background picture-options none
+   gsettings set org.gnome.desktop.background color-shading-type 'solid'
+   gsettings set org.gnome.desktop.background primary-color '#268785'  # 青碧
    ```
 
 8. 設定アプリで調整する項目
-   - スタイル：暗い（色は好みで）
-   - マルチタスク：ホットコーナーを有効化する
-   - 電源管理：バッテリー残量を表示する
-9. Gnome-tweaksで調整する項目
-   - 全般：ラップトップの蓋を閉じるとサスペンドする：無効
-   - ウィンドウ：ウィンドウ操作キー：Alt
-   - ウィンドウ：ホバーでフォーカスを当てる
-   - キーボードとマウス：追加のレイアウトオプション：Caps LockをControlとして扱う
-   - キーボードとマウス：マウスクリックのエミュレーション：無効
-   - トップバー：曜日
-   - フォント：インターフェースのテキスト：IPA Pゴシック Regular 11
-   - フォント：ドキュメントのテキスト：IPA Pゴシック Regular 11
-   - フォント：等幅テキスト：Monospace Regular 13
-   - フォント：レガシーなウィンドウタイトル：IPA Pゴシック Bold 11
-10. GitHubアカウントの認証
-    - [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)での認証がとても便利
+   - Multitasking: Hot Corner: on
+   - Multitasking: App Switching: Include apps from the curent workspace only
+   - Appearance: Dark
+   - Ubuntu Desktop: Show Home Folder: off
+   - Ubuntu Desktop: Configure Dock Behavior: Show Trash: off
+   - Ubuntu Desktop: Enhanced Tiling: off
+   - Keyboard: Keyboard Shortcuts: Open the quick setting menu: disabled
+   - Keyboard: Keyboard Shortcuts: Show the overview: Super+S
+   - Accessibility: Seeing: Reduce Animation: on
+   - To Do：設定ファイルをgistに登録する
+9.  Gnome-tweaksで調整する項目
+   フォント：インターフェースのテキスト：IPA Pゴシック Regular
+   フォント：ドキュメントのテキスト：IPA Pゴシック Regular
+   フォント：等幅テキスト：Monospace Regular
+   キーボード：追加のレイアウトオプション：Caps Lockを追加のControlとする
+   ウィンドウ：ウィンドウ操作キー：Alt
+   ウィンドウ：ホバーでフォーカスを当てる
+   キーボードとマウス：マウスクリックのエミュレーション：無効
+10. [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)を使ったGitHubアカウントの認証
+   ```bash
+   sudo apt install gh
+   gh auth login
+   ```
+   - Personal access tokens (classic)で最小権限（'repo', 'read:org', 'admin:public_key'）を選択してtokenを生成する
+   - To do：Fine-grained tokensでの設定方法を調べる
+   - To do：差分の表示方法を変える
 
 ### To Do
 
-1. SSH鍵の生成と登録
-   - ed25519プロトコル
+- SSH鍵の生成と登録
+  - GitHub CLIでed25519プロトコルの鍵が生成されるのでこれを使い回せばよい
+  - ※違うマシンでは違う鍵を使う
 
-## VSCodeのインストールと設定
+## VSCodeの設定
 
-- snap版ではなくdeb版をインストールすること（前者だと日本語環境が作れない）
-- 設定ファイルはREADMEにまとめてある
 - 導入している拡張機能は以下の通り．先頭に `code --install-extension` をつけるとターミナルからインストールできる：
 
-  ```linux
+  ```bash
   $ code --list-extensions
   brunnerh.insert-unicode
   christian-kohler.path-intellisense
