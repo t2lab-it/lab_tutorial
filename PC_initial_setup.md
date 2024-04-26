@@ -134,6 +134,11 @@ Codename:	noble
    - To do：Fine-grained tokensでの設定方法を調べる
    - To do：差分の表示方法を変える
 
+   ```bash
+   git config --global user.email "you@example.com"
+   git config --global user.name "Your Name"
+   ```
+
 ### To Do
 
 - SSH鍵の生成と登録
