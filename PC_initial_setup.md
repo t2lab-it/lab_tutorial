@@ -154,6 +154,37 @@ Codename:	noble
 - [@karaage0703：Ubuntuをちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554)
 - 他にもいろいろなウェブサイトでLinuxの設定が紹介されているが，各項目が自分にとって有益かどうかをよく考慮してから実行すること．
 
+## 様々な設定ファイル
+
+- [.bashrc](https://gist.github.com/ryo-ARAKI/d79182aa599dadf4b8549629a349511c)
+  - bash shell の設定ファイル
+- [config.fish](https://gist.github.com/ryo-ARAKI/9d5e85d7be10863d515850b2ce2182e3)
+  - [fish shell](https://fishshell.com/) の設定ファイル
+- [config](https://gist.github.com/ryo-ARAKI/f4031daf4d4c388838b123705aee8893)
+  - ターミナルエミュレータである [Terminator](https://gnome-terminator.org/) の設定ファイル
+- [starship.toml](https://gist.github.com/ryo-ARAKI/48a11585299f9032fa4bda60c9bba593)
+  - ターミナルのプロンプトを装飾してくれる [Starship](https://starship.rs/) の設定ファイル
+- [.gitconfig](https://gist.github.com/ryo-ARAKI/578c36fa78ee5e148d7452dcb12fbb3b)
+  - Git の設定ファイル（非公開）
+- [.screenrc](https://gist.github.com/ryo-ARAKI/07923755368e1f4ee0f67778a1cf2bca)
+  - ターミナルエミュレーションソフトである [screen](https://www.gnu.org/software/screen/) の設定ファイル
+- [.vimrc](https://gist.github.com/ryo-ARAKI/a9e64763c1f7d6eb1e210cb13388fd43)
+  - エディタである [vim](https://www.vim.org/) の設定ファイル
+- [keybindings.json & setting.json](https://gist.github.com/ryo-ARAKI/b4a54125e7922d2166f7fa7373c0f6dd)
+  - エディタである [VSCode](https://code.visualstudio.com/) の設定ファイル
+- [LaTeX `.sty`](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df)
+  - LaTeX の設定ファイル
+  - [mystyle.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle-sty)
+  - [mystyle_jpn.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_jpn-sty) ：和文用設定ファイル
+  - [mystyle_beamer.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_beamer-sty) ：Beamer 用設定ファイル
+  - [mystyle_beamer_jpn.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_beamer_jpn-sty) ：和文 Beamer 用設定ファイル
+  - [mystyle_biblatex.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_biblatex-sty) ： BibLaTeX 用設定ファイル
+  - [.latexmkrc_revtex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_revtex) ：欧文コンパイル用設定ファイル
+  - [.latexmkrc_uplatex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_uplatex) ：和文コンパイル用設定ファイル
+- [.xbindkeysrc](https://gist.github.com/ryo-ARAKI/b17adac7419087a8ae821ebd1b30cd81)
+  - 多ボタンマウスの Linux 用設定ファイル
+  - Logitech MX Master 2S
+
 ## VSCodeの設定
 
 - 導入している拡張機能は以下の通り．先頭に `code --install-extension` をつけるとターミナルからインストールできる：
