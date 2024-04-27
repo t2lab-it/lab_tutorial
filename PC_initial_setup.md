@@ -117,6 +117,8 @@ Codename:	noble
    - Keyboard: Keyboard Shortcuts: Open the quick setting menu: disabled
    - Keyboard: Keyboard Shortcuts: Show the overview: Super+S
    - Accessibility: Seeing: Reduce Animation: on
+   - Accessibility: Seeing: Large Text: on
+   - Accessibility: Seeing: Cursor size: Medium
    - To Do：設定ファイルをgistに登録する
 9.  Gnome-tweaksで調整する項目
    フォント：インターフェースのテキスト：IPA Pゴシック Regular
