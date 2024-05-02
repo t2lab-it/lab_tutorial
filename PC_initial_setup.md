@@ -49,6 +49,7 @@ Codename:	noble
    sudo apt -y install ubuntu-restricted-extras  # フォント・動画再生用コーデック
    sudo apt -y install gnome-tweaks  # 詳細設定
    sudo apt -y install gnome-shell-extension-manager  # Gnome Extensions
+   sudo apt -y install gnuplot  # 可視化
    # 個人の好み
    sudo apt -y install terminator  # かっこいいターミナルエミュレータ
    sudo apt -y install fish  # モダンなシェル
@@ -78,8 +79,9 @@ Codename:	noble
    sudo dpkg -i google-chrome-stable_current_amd64.deb
    ```
 
-   - VSCode：[公式サイトから](https://code.visualstudio.com/Download)deb版をインストールする（snap版だと日本語環境が作れない）
+   - VSCode：[公式サイト](https://code.visualstudio.com/Download)からdeb版をダウンロードしてインストールする（snap版だと日本語環境が作れない）
      - To Do： `curl` や `wget` を使う方法を調べる
+   - Zoom：[公式サイト](https://zoom.us/download?os=linux)から `zoom_amd64.deb` をダウンロードしてインストールする
 
 4. ホームディレクトリ下の日本語ディレクトリを英語に変換する
    ※日本語 Remixをダウンロードした際のみ
