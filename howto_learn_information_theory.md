@@ -28,7 +28,7 @@
 が対話形式で書かれており，おすすめです．
 また，教科書として出版される予定の
 
-- [Falkovich, "Physical Nature of Information](https://www.weizmann.ac.il/complex/falkovich/sites/complex.falkovich/files/uploads/PNI22.pdf)
+- [Falkovich, "Physical Nature of Information"](https://www.weizmann.ac.il/complex/falkovich/sites/complex.falkovich/files/uploads/PNI22.pdf)
 - [Y. Polyanskiy and Y. Wu. "Information Theory: From Coding to Learning," Cambridge University Press](https://people.lids.mit.edu/yp/homepage/papers.html)
 
 の二冊も気になっています．

@@ -19,13 +19,12 @@
 公式ブログの"[Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia/)"という文章にその意図がまとめられているのでぜひ読んでみてください．
 Juliaの勉強法としては，まず
 
-
 - [JuliaLang.org: Getting Started](https://docs.julialang.org/en/v1/manual/getting-started/)
 - [進藤 裕之，佐藤 建太，「1から始めるJuliaプログラミング」，コロナ社（2020）](https://www.coronasha.co.jp/np/isbn/9784339029055/)
+  - ただしJulia v1.2というやや古いバージョンに基づいて書かれていることに注意してください．
+- [永井 佑紀，「Juliaではじめる数値計算入門」，技術評論社（2024）](https://gihyo.jp/book/2024/978-4-297-14128-8)
 
-  ただしJulia v1.2というやや古いバージョンに基づいて書かれていることに注意してください．
-
-などで基本的な使い方を学んだのち，
+などで基本的な使い方や数値計算の基礎を学んだのち，
 
 - [永井 佑紀，「1週間で学べる！ Julia数値計算プログラミング」，講談社（2021）](https://www.kspub.co.jp/book/detail/5282823.html)（[サポートページ](https://cometscome.github.io/YukiNagai/ja/books/greenjulia/)）
 <!--
