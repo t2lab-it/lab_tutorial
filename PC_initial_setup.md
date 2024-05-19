@@ -68,6 +68,7 @@ Codename:	noble
 
    ```bash
    sudo apt install texlive-full
+   sudo kanji-config-updmap-sys haranoaji  # 日本語フォントとして原ノ味フォントを指定
    ```
 
 3. （`.deb` から）必要なソフトウェアを追加する
