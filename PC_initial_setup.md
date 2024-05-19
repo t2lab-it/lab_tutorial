@@ -186,9 +186,12 @@ Codename:	noble
   - [mystyle_biblatex.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_biblatex-sty) ： BibLaTeX 用設定ファイル
   - [.latexmkrc_revtex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_revtex) ：欧文コンパイル用設定ファイル
   - [.latexmkrc_uplatex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_uplatex) ：和文コンパイル用設定ファイル
-- [.xbindkeysrc](https://gist.github.com/ryo-ARAKI/b17adac7419087a8ae821ebd1b30cd81)
+<!-- - [.xbindkeysrc](https://gist.github.com/ryo-ARAKI/b17adac7419087a8ae821ebd1b30cd81)
   - 多ボタンマウスの Linux 用設定ファイル
   - Logitech MX Master 2S
+- [logid.cfg]()
+  - マウスのボタン設定ファイル
+  - Logitech MX Master 3S -->
 
 ## VSCodeの設定
 
