@@ -1,11 +1,16 @@
 # 情報理論の勉強
 
-情報理論の勉強は，まず
+情報系でない人が情報理論を勉強するときは，まず
+
+- [予備校のノリで学ぶ「大学の数学・物理」，「【サプライズ】物理学のための情報理論入門 @東京理科大学」](https://youtu.be/mPU-7gGjp5Q?si=3gT90-fvMZg3ZpUw)
+
+を観てShannonエントロピや相互情報量といった基本的な量をしっかり理解しましょう．
+その際，
 
 - [甘利「情報理論」，ちくま学芸文庫（2011）](https://www.chikumashobo.co.jp/product/9784480093585/)の1章
 - [沙川「非平衡統計力学」，共立出版（2022）](https://www.kyoritsu-pub.co.jp/book/b10012378.html)の補遺A
 
-を読んでShannonエントロピや相互情報量といった基本的な量の概念をしっかりと理解しましょう．
+を傍らに置いておくとさらに良いでしょう．
 他に日本語で読めるまとまった資料として
 
 - [シャノン「通信の数学的理論」，ちくま学芸文庫（2009）](https://www.chikumashobo.co.jp/product/9784480092229/)
@@ -29,7 +34,7 @@
 また，教科書として出版される予定の
 
 - [Falkovich, "Physical Nature of Information"](https://www.weizmann.ac.il/complex/falkovich/sites/complex.falkovich/files/uploads/PNI22.pdf)
-- [Y. Polyanskiy and Y. Wu. "Information Theory: From Coding to Learning," Cambridge University Press](https://people.lids.mit.edu/yp/homepage/papers.html)
+- [Y. Polyanskiy and Y. Wu. "Information Theory: From Coding to Learning," Cambridge University Press](https://people.lids.mit.edu/yp/homepage/papers.html)（[出版社のページ](https://www.cambridge.org/highereducation/books/information-theory/CFF2F02ED54398148B7D8AA26E55B2BC)）
 
 の二冊も気になっています．
 前者は物理現象とのつながり，後者はコーディングに重点が置かれているようです．
