@@ -58,6 +58,12 @@ Juliaの勉強法としては，まず
 
 も参考になると思います．
 
+Juliaを使った大規模数値計算はまだ資料が少ないですが，阪大の[SQUID](http://www.hpc.cmc.osaka-u.ac.jp/squid/)システムを使った以下の記事
+
+- [宮武 勇登，「SQUIDでJuliaプログラミング」，サイバーメディアHPCジャーナル（2022）](https://ir.library.osaka-u.ac.jp/repo/ouka/all/89337/hpc12_003.pdf)
+
+が参考になります．
+
 ## Fortran
 
 Fortranを使って大規模な並列数値計算を実行したい人は，まず
