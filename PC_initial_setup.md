@@ -1,4 +1,4 @@
-# Ubuntuの初期設定とソフトウェアのインストール・設定
+# Ubuntu の初期設定とソフトウェアのインストール・設定
 
 ※完全な手順書ではなく備忘録に近いものなので，自身の環境に合わせて設定してください．
 
@@ -13,16 +13,16 @@ Release:	24.04
 Codename:	noble
 ```
 
-## OSをWindowsからUbuntuに変更する
+## OS を Windows から Ubuntu に変更する
 
 1. すべての機能が正常に動作していることを確認する
    - キーボード，カメラ，指紋認証，Wi-Fi，Bluetooth，...
-2. BIOSを最新版に更新する
-3. WindowsのBitLockerドライブ暗号化を解除し，BIOSでセキュアブートを無効化しておく
-5. Ubuntuの最新版をインストールする
+2. BIOS を最新版に更新する
+3. Windows の BitLocker ドライブ暗号化を解除し，BIOS でセキュアブートを無効化しておく
+4. Ubuntu の最新版をインストールする
    - [Ubuntu Desktop](https://jp.ubuntu.com/download)もしくは[Ubuntu Desktop 日本語 Remix](https://www.ubuntulinux.jp/download/ja-remix)
 
-## OS設定
+## OS 設定
 
 1. システムを更新して再起動する
 
@@ -64,7 +64,7 @@ Codename:	noble
    cargo install git-delta  # gitの差分出力
    ```
 
-   TeXLiveはすごく時間がかかるので暇なときにやる
+   TeXLive はすごく時間がかかるので暇なときにやる
 
    ```bash
    sudo apt install texlive-full
@@ -74,35 +74,38 @@ Codename:	noble
 3. （`.deb` から）必要なソフトウェアを追加する
 
    Chrome
+
    ```bash
    cd Downloads
    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
    sudo dpkg -i google-chrome-stable_current_amd64.deb
    ```
 
-   - VSCode：[公式サイト](https://code.visualstudio.com/Download)からdeb版をダウンロードしてインストールする（snap版だと日本語環境が作れない）
+   - VSCode：[公式サイト](https://code.visualstudio.com/Download)から deb 版をダウンロードしてインストールする（snap 版だと日本語環境が作れない）
      - To Do： `curl` や `wget` を使う方法を調べる
    - Zoom：[公式サイト](https://zoom.us/download?os=linux)から `zoom_amd64.deb` をダウンロードしてインストールする
 
 4. ホームディレクトリ下の日本語ディレクトリを英語に変換する
-   ※日本語 Remixをダウンロードした際のみ
+   ※日本語 Remix をダウンロードした際のみ
 
    ```bash
    LANG=C xdg-user-dirs-gtk-update
    ```
 
 5. 日本語入力を設定する
-   - 参考：[Ubuntu 20.04 LTS：日本語環境にする](https://www.server-world.info/query?os=Ubuntu_20.04&p=japanese)
-     - 注意：Mozcのデフォルト入力法を「直接入力」にするには `.config/mozc/ibus_config.textproto` に `active_on_launch: True` と追記すればよい．ソースを書き換えて再ビルドする必要はない
 
-6. 時計合わせのサーバをNICTへ変更する
+   - 参考：[Ubuntu 20.04 LTS：日本語環境にする](https://www.server-world.info/query?os=Ubuntu_20.04&p=japanese)
+     - 注意：Mozc のデフォルト入力法を「直接入力」にするには `.config/mozc/ibus_config.textproto` に `active_on_launch: True` と追記すればよい．ソースを書き換えて再ビルドする必要はない
+
+6. 時計合わせのサーバを NICT へ変更する
 
    ```bash
    sudo sed -i 's/#NTP=/NTP=ntp.nict.jp/g' /etc/systemd/timesyncd.conf
    ```
 
 7. デスクトップ背景を単色にする
-   - HTMLカラーコードは例えば[日本の伝統色](https://nipponcolors.com/)から探す
+
+   - HTML カラーコードは例えば[日本の伝統色](https://nipponcolors.com/)から探す
 
    ```bash
    gsettings set org.gnome.desktop.background picture-options none
@@ -122,42 +125,44 @@ Codename:	noble
    - Accessibility: Seeing: Reduce Animation: on
    - Accessibility: Seeing: Large Text: on
    - Accessibility: Seeing: Cursor size: Medium
-   - To Do：設定ファイルをgistに登録する
-9.  Gnome-tweaksで調整する項目
-   フォント：インターフェースのテキスト：IPA Pゴシック Regular
-   フォント：ドキュメントのテキスト：IPA Pゴシック Regular
+   - To Do：設定ファイルを gist に登録する
+9. Gnome-tweaks で調整する項目
+   フォント：インターフェースのテキスト：IPA P ゴシック Regular
+   フォント：ドキュメントのテキスト：IPA P ゴシック Regular
    フォント：等幅テキスト：Monospace Regular
-   キーボード：追加のレイアウトオプション：Caps Lockを追加のControlとする
+   キーボード：追加のレイアウトオプション：Caps Lock を追加の Control とする
    ウィンドウ：ウィンドウ操作キー：Alt
    ウィンドウ：ホバーでフォーカスを当てる
    キーボードとマウス：マウスクリックのエミュレーション：無効
-10. [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)を使ったGitHubアカウントの認証
+10. [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)を使った GitHub アカウントの認証
 
-   ```bash
-   sudo apt install gh
-   gh auth login
-   ```
-   - Personal access tokens (classic)で最小権限（'repo', 'read:org', 'admin:public_key'）を選択してtokenを生成する
-   - To do：Fine-grained tokensでの設定方法を調べる
-   - To do：差分の表示方法を変える
-11. Gitの設定
+```bash
+sudo apt install gh
+gh auth login
+```
 
-   ```bash
-   git config --global user.email "you@example.com"
-   git config --global user.name "Your Name"
-   ```
+- Personal access tokens (classic)で最小権限（'repo', 'read:org', 'admin:public_key'）を選択して token を生成する
+- To do：Fine-grained tokens での設定方法を調べる
+- To do：差分の表示方法を変える
+
+11. Git の設定
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
 
 ### To Do
 
-- SSH鍵の生成と登録
-  - GitHub CLIでed25519プロトコルの鍵が生成されるのでこれを使い回せばよい
+- SSH 鍵の生成と登録
+  - GitHub CLI で ed25519 プロトコルの鍵が生成されるのでこれを使い回せばよい
   - ※違うマシンでは違う鍵を使う
 
 ## 参考にしたページ
 
 - [金子邦彦研究室：Ubuntu 22.04 のインストール直後の設定](https://www.kkaneko.jp/tools/ubuntu/ubuntu_setup.html)
-- [@karaage0703：Ubuntuをちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554)
-- 他にもいろいろなウェブサイトでLinuxの設定が紹介されているが，各項目が自分にとって有益かどうかをよく考慮してから実行すること．
+- [@karaage0703：Ubuntu をちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554)
+- 他にもいろいろなウェブサイトで Linux の設定が紹介されているが，各項目が自分にとって有益かどうかをよく考慮してから実行すること．
 
 ## 様々な設定ファイル
 
@@ -186,14 +191,14 @@ Codename:	noble
   - [mystyle_biblatex.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_biblatex-sty) ： BibLaTeX 用設定ファイル
   - [.latexmkrc_revtex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_revtex) ：欧文コンパイル用設定ファイル
   - [.latexmkrc_uplatex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_uplatex) ：和文コンパイル用設定ファイル
-<!-- - [.xbindkeysrc](https://gist.github.com/ryo-ARAKI/b17adac7419087a8ae821ebd1b30cd81)
+  <!-- - [.xbindkeysrc](https://gist.github.com/ryo-ARAKI/b17adac7419087a8ae821ebd1b30cd81)
   - 多ボタンマウスの Linux 用設定ファイル
   - Logitech MX Master 2S
 - [logid.cfg]()
   - マウスのボタン設定ファイル
   - Logitech MX Master 3S -->
 
-## VSCodeの設定
+## VSCode の設定
 
 - 導入している拡張機能は以下の通り．先頭に `code --install-extension` をつけるとターミナルからインストールできる：
 
@@ -240,20 +245,20 @@ Codename:	noble
   yzhang.markdown-all-in-one
   ```
 
-## GNOME shell extensionsのリスト
+## GNOME shell extensions のリスト
 
-- 設定ファイルは `~/.local/share/gnome-shell/extensions/` にあるが，単一のファイルではない（のでGist等に登録できない）
-- 最初から入っているSystem extensionsはUbuntu Dock以外をすべてoffにしてよい
+- 設定ファイルは `~/.local/share/gnome-shell/extensions/` にあるが，単一のファイルではない（ので Gist 等に登録できない）
+- 最初から入っている System extensions は Ubuntu Dock 以外をすべて off にしてよい
 
 ### [CoverflowAltTab](https://github.com/dmo60/CoverflowAltTab)
 
-- Alt+Tabでのウィンドウ切り替えをより大きく表示する
+- Alt+Tab でのウィンドウ切り替えをより大きく表示する
 - アプリアイコンのスタイル：オーバーレイ
 
 ### [Dash to Panel](https://github.com/home-sweet-gnome/dash-to-panel)
 
 - アプリケーションランチャーとシステムトレイと融合する
-- Install後にエラーになるときは一度ログアウトしてサイドログインすれば直る
+- Install 後にエラーになるときは一度ログアウトしてサイドログインすれば直る
 
 #### Position
 
@@ -281,7 +286,7 @@ Codename:	noble
 
 ### [RunCat](https://github.com/win0err/gnome-runcat)
 
-- CPU負荷をグラフィカルに表示する
+- CPU 負荷をグラフィカルに表示する
 - Sleeping threshold = 20
 - Displaying items = Character only
 
@@ -299,6 +304,6 @@ Codename:	noble
 
 ### おすすめ拡張機能を紹介している記事
 
-- [Ubuntu日和：拡張機能でGNOME Shellを派手にしたり便利にしたり](https://pc.watch.impress.co.jp/docs/column/ubuntu/1440667.html)（2022）
-- [GNOME42に対応したベストな 拡張機能 (失敗しないLinuxのカスタマイズ)](https://www.gustavprogress.com/gnome42%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%9F%E3%83%99%E3%82%B9%E3%83%88%E3%81%AA-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD-%E5%A4%B1%E6%95%97%E3%81%97%E3%81%AA%E3%81%84linux%E3%81%AE%E3%82%AB/)（2022）
-- [おすすめ GNOME Shell Extensions 11選](https://sy-base.com/myrobotics/ubuntu/mybest_extensions/)（2017）
+- [Ubuntu 日和：拡張機能で GNOME Shell を派手にしたり便利にしたり](https://pc.watch.impress.co.jp/docs/column/ubuntu/1440667.html)（2022）
+- [GNOME42 に対応したベストな 拡張機能 (失敗しない Linux のカスタマイズ)](https://www.gustavprogress.com/gnome42%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%9F%E3%83%99%E3%82%B9%E3%83%88%E3%81%AA-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD-%E5%A4%B1%E6%95%97%E3%81%97%E3%81%AA%E3%81%84linux%E3%81%AE%E3%82%AB/)（2022）
+- [おすすめ GNOME Shell Extensions 11 選](https://sy-base.com/myrobotics/ubuntu/mybest_extensions/)（2017）

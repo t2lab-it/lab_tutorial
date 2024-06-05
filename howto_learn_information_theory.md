@@ -4,11 +4,11 @@
 
 - [予備校のノリで学ぶ「大学の数学・物理」，「【サプライズ】物理学のための情報理論入門 @東京理科大学」](https://youtu.be/mPU-7gGjp5Q?si=3gT90-fvMZg3ZpUw)
 
-を観てShannonエントロピや相互情報量といった基本的な量をしっかり理解しましょう．
+を観て Shannon エントロピや相互情報量といった基本的な量をしっかり理解しましょう．
 その際，
 
-- [甘利「情報理論」，ちくま学芸文庫（2011）](https://www.chikumashobo.co.jp/product/9784480093585/)の1章
-- [沙川「非平衡統計力学」，共立出版（2022）](https://www.kyoritsu-pub.co.jp/book/b10012378.html)の補遺A
+- [甘利「情報理論」，ちくま学芸文庫（2011）](https://www.chikumashobo.co.jp/product/9784480093585/)の 1 章
+- [沙川「非平衡統計力学」，共立出版（2022）](https://www.kyoritsu-pub.co.jp/book/b10012378.html)の補遺 A
 
 を傍らに置いておくとさらに良いでしょう．
 他に日本語で読めるまとまった資料として
@@ -26,7 +26,7 @@
 
 などのパッケージを使って教科書に出てきた例を実装しながら勉強するのをおすすめします．
 
-英語が苦でない人は，2023年のLes Houchesサマースクールでのチュートリアル講義
+英語が苦でない人は，2023 年の Les Houches サマースクールでのチュートリアル講義
 
 - [Tohme & Bialek, "A brief tutorial on information theory", SciPost Physics Lecture Notes (2023)](https://arxiv.org/abs/2402.16556)
 
