@@ -91,7 +91,7 @@
 
   - [Crameri et al., "The misuse of colour in science communication", Nat. Comm. (2020)](https://doi.org/10.1038/s41467-020-19160-7)
   - [森下，「科学的・非科学的カラーマップ」，測地学会誌（2021）](https://doi.org/10.11366/sokuchi.67.29)
-  - [文部科学省，「色覚に関する指導の資料」](https://www.pref.osaka.lg.jp/attach/2470/00004402/sikikaku.pdf)
+  - [文部科学省，「色覚に関する指導の資料」](https://www.pref.yamanashi.jp/documents/5729/sikikakushiryou.pdf)
 
 ### 研究や論文執筆での GitHub の使い方
 
