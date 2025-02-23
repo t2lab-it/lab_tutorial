@@ -157,13 +157,6 @@ gh auth login
 - To do：Fine-grained tokens での設定方法を調べる
 - To do：差分の表示方法を変える
 
-11. Git の設定
-
-```bash
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-```
-
 ### To Do
 
 - SSH 鍵の生成と登録
@@ -187,7 +180,7 @@ git config --global user.name "Your Name"
 - [starship.toml](https://gist.github.com/ryo-ARAKI/48a11585299f9032fa4bda60c9bba593)
   - ターミナルのプロンプトを装飾してくれる [Starship](https://starship.rs/) の設定ファイル
 - [.gitconfig](https://gist.github.com/ryo-ARAKI/578c36fa78ee5e148d7452dcb12fbb3b)
-  - Git の設定ファイル（非公開）
+  - Git の設定ファイル
 - [.screenrc](https://gist.github.com/ryo-ARAKI/07923755368e1f4ee0f67778a1cf2bca)
   - ターミナルエミュレーションソフトである [screen](https://www.gnu.org/software/screen/) の設定ファイル
 - [.vimrc](https://gist.github.com/ryo-ARAKI/a9e64763c1f7d6eb1e210cb13388fd43)
