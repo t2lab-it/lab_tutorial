@@ -52,6 +52,7 @@ Codename:	noble
    sudo apt -y install gnuplot  # 可視化
    # 個人の好み
    sudo apt -y install terminator  # かっこいいターミナルエミュレータ
+   sudo apt-add-repository ppa:fish-shell/release-3  # fishのリモートリポジトリを登録
    sudo apt -y install fish  # モダンなシェル
    sudo apt -y install peco  # CUI上のフィルタ
    sudo apt -y install fonts-ipafont fonts-ricty-diminished && fc-cache -fv  # IPAフォント
