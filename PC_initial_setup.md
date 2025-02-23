@@ -232,15 +232,21 @@ Codename:	noble
   equinusocio.vsc-material-theme-icons
   esbenp.prettier-vscode
   fortran-lang.linter-gfortran
+  github.copilot
+  github.copilot-chat
   ibm.output-colorizer
   james-yu.latex-workshop
+  janisdd.vscode-edit-csv
   jprestidge.theme-material-theme
   julialang.language-julia
   kirozen.wordcounter
   marp-team.marp-vscode
+  mechatroner.rainbow-csv
   monokai.theme-monokai-pro-vscode
   mosapride.zenkaku
   ms-ceintl.vscode-language-pack-ja
+  ms-python.autopep8
+  ms-python.black-formatter
   ms-python.debugpy
   ms-python.python
   ms-python.vscode-pylance
@@ -254,7 +260,7 @@ Codename:	noble
   ms-vscode.atom-keybindings
   ms-vscode.cpptools
   ms-vscode.remote-explorer
-  nvarner.typst-lsp
+  myriad-dreamin.tinymist
   oderwat.indent-rainbow
   pkief.material-icon-theme
   sgryjp.japanese-word-handler
