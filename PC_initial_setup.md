@@ -115,7 +115,19 @@ Codename:	noble
    sudo sed -i 's/#NTP=/NTP=ntp.nict.jp/g' /etc/systemd/timesyncd.conf
    ```
 
-7. デスクトップ背景を単色にする
+7. `zram`を有効化してスワップを最適化
+   ```bash
+   sudo apt install -y zram-tools
+   echo 'ALGO=zstd' | sudo tee /etc/default/zramswap
+   sudo systemctl enable --now zramswap
+   ```
+8. [ラップトップ]バッテリー寿命を延ばす設定
+   ```bash
+   sudo apt install -y tlp tlp-rdw
+   sudo systemctl enable tlp
+   sudo systemctl start tlp
+   ```
+9. デスクトップ背景を単色にする
 
    - HTML カラーコードは例えば[日本の伝統色](https://nipponcolors.com/)から探す
 
@@ -125,37 +137,39 @@ Codename:	noble
    gsettings set org.gnome.desktop.background primary-color '#268785'  # 青碧
    ```
 
-8. 設定アプリで調整する項目
-   - Multitasking: Hot Corner: on
-   - Multitasking: App Switching: Include apps from the curent workspace only
-   - Appearance: Dark
-   - Ubuntu Desktop: Show Home Folder: off
-   - Ubuntu Desktop: Configure Dock Behavior: Show Trash: off
-   - Ubuntu Desktop: Enhanced Tiling: off
-   - Keyboard: Keyboard Shortcuts: Open the quick setting menu: disabled
-   - Keyboard: Keyboard Shortcuts: Show the overview: Super+S
-   - Accessibility: Seeing: Reduce Animation: on
-   - Accessibility: Seeing: Large Text: on
-   - Accessibility: Seeing: Cursor size: Medium
-   - To Do：設定ファイルを gist に登録する
-9. Gnome-tweaks で調整する項目
-   フォント：インターフェースのテキスト：IPA P ゴシック Regular
-   フォント：ドキュメントのテキスト：IPA P ゴシック Regular
-   フォント：等幅テキスト：Monospace Regular
-   キーボード：追加のレイアウトオプション：Caps Lock を追加の Control とする
-   ウィンドウ：ウィンドウ操作キー：Alt
-   ウィンドウ：ホバーでフォーカスを当てる
-   キーボードとマウス：マウスクリックのエミュレーション：無効
-10. [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)を使った GitHub アカウントの認証
+10. 設定アプリで調整する項目
 
-```bash
-sudo apt-fast install gh
-gh auth login
-```
+    - Multitasking: Hot Corner: on
+    - Multitasking: App Switching: Include apps from the curent workspace only
+    - Appearance: Dark
+    - Ubuntu Desktop: Show Home Folder: off
+    - Ubuntu Desktop: Configure Dock Behavior: Show Trash: off
+    - Ubuntu Desktop: Enhanced Tiling: off
+    - Keyboard: Keyboard Shortcuts: Open the quick setting menu: disabled
+    - Keyboard: Keyboard Shortcuts: Show the overview: Super+S
+    - Accessibility: Seeing: Reduce Animation: on
+    - Accessibility: Seeing: Large Text: on
+    - Accessibility: Seeing: Cursor size: Medium
+    - To Do：設定ファイルを gist に登録する
 
-- Personal access tokens (classic)で最小権限（'repo', 'read:org', 'admin:public_key'）を選択して token を生成する
-- To do：Fine-grained tokens での設定方法を調べる
-- To do：差分の表示方法を変える
+11. Gnome-tweaks で調整する項目
+    フォント：インターフェースのテキスト：IPA P ゴシック Regular
+    フォント：ドキュメントのテキスト：IPA P ゴシック Regular
+    フォント：等幅テキスト：Monospace Regular
+    キーボード：追加のレイアウトオプション：Caps Lock を追加の Control とする
+    ウィンドウ：ウィンドウ操作キー：Alt
+    ウィンドウ：ホバーでフォーカスを当てる
+    キーボードとマウス：マウスクリックのエミュレーション：無効
+12. [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)を使った GitHub アカウントの認証
+
+    ```bash
+    sudo apt-fast install gh
+    gh auth login
+    ```
+
+    - Personal access tokens (classic)で最小権限（'repo', 'read:org', 'admin:public_key'）を選択して token を生成する
+    - To do：Fine-grained tokens での設定方法を調べる
+    - To do：差分の表示方法を変える
 
 ### To Do
 
