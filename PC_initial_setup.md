@@ -62,7 +62,8 @@ Codename:	noble
    sudo apt-fast-y install unar  # ファイル解凍
    curl -fsSL https://install.julialang.org | sh  # Julia
    curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path  # Rust
-   . "$HOME/.cargo/env"  # Rustのパスを通す
+   echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
+   echo 'set -gx PATH $HOME/.cargo/bin $PATH' >> ~/.config/fish/config.fish
    cargo install --locked typst-cli  # LaTeXの代替になる新しい組版ソフト
    cargo install starship --locked  # プロンプト装飾
    cargo install git-delta  # gitの差分出力
@@ -85,13 +86,13 @@ Codename:	noble
 
 3. （`.deb` から）必要なソフトウェアを追加する
 
-   Chrome
+   - Chrome
 
-   ```bash
-   cd Downloads
-   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-   sudo dpkg -i google-chrome-stable_current_amd64.deb
-   ```
+     ```bash
+     cd Downloads
+     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+     sudo dpkg -i google-chrome-stable_current_amd64.deb
+     ```
 
    - VSCode：[公式サイト](https://code.visualstudio.com/Download)から deb 版をダウンロードしてインストールする（snap 版だと日本語環境が作れない）
      - To Do： `curl` や `wget` を使う方法を調べる
