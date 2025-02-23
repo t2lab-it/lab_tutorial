@@ -9,18 +9,21 @@
 2. [ピーター・Ｂ・メダワー著，鎮目 恭夫訳，「若き科学者へ （新版）」，みすず書房（2016）](https://www.msz.co.jp/book/detail/08530/)
 3. [石原 尚，「卒論・修論研究の攻略本―有意義な研究室生活を送るための実践ガイド―」，森北出版（2021）](https://www.morikita.co.jp/books/mid/094361)
    - 著者の紹介ブログ記事：[「卒論・修論研究の攻略本」ってどんな本？](https://note.com/hisashi_is/n/n128c8c269b3a)
+4. [研究ステップ編集委員会，先輩、研究ってどうやるんですか，京都大学出版会（2022）](https://www.kyoto-up.or.jp/9784814004195.html)
 
 などがあります．
 1 は定評のある書籍で，私自身も大学院時代に読んで非常に学ぶところが大きかったです．
 2 は原著が出版されたのが 1981 年と古い本ですが，その内容はいまも普遍的に通じるものだと思います．
 私自身が博士後期課程に進学して大学教員としてのキャリアを進むにあたり，精神的な心構えを学んだのはこの本を通じてでした．
-3 は最近出版された書籍で，より読みやすいと思います．
+3，4 は最近出版された書籍で，より読みやすいと思います．
 
 また，ネットで読める文章には
 
 1. [kaityo256: lab_startup](https://kaityo256.github.io/lab_startup/)（慶応大・渡辺先生）
+  - [スライド](https://speakerdeck.com/kaityo256/)
 2. [Hiroyuki Ohsaki：充実した大学・大学院生活のための 100 のヒント (草稿)](https://lsnl.jp/~ohsaki/research/100-tips/)（関西学院大・大崎先生）
 3. [発声練習：卒業論文、修士論文関連のエントリー](https://next49.hatenadiary.jp/entry/20080105/p3)
+4. [Ten Simple Rules](https://collections.plos.org/collection/ten-simple-rules/)
 
 などがあり，どれも非常に有用です．
 この文章も，将来的にはこれらと並ぶような情報を提供できれば，という目標のもと書き足していく予定です．
@@ -90,6 +93,7 @@
   なお，カラーマップの選び方と色覚多様性については，例えば以下の文献を参照してください：
 
   - [Crameri et al., "The misuse of colour in science communication", Nat. Comm. (2020)](https://doi.org/10.1038/s41467-020-19160-7)
+  - [Alla Katsnelson, "Colour me better: fixing figures for colour blindness"](https://doi.org/10.1038/d41586-021-02696-z)
   - [森下，「科学的・非科学的カラーマップ」，測地学会誌（2021）](https://doi.org/10.11366/sokuchi.67.29)
   - [文部科学省，「色覚に関する指導の資料」](https://www.pref.yamanashi.jp/documents/5729/sikikakushiryou.pdf)
 
