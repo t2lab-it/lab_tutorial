@@ -27,11 +27,13 @@ Codename:	noble
 1. システムを更新して再起動する
 
    ```bash
-   sudo apt -y update
-   sudo apt -yV upgrade
-   sudo apt -yV dist-upgrade
-   sudo apt -yV autoremove
-   sudo apt autoclean
+   sudo add-apt-repository -y ppa:apt-fast/stable
+   sudo apt update
+   sudo apt install -y apt-fast  # 並列apt
+   sudo apt-fast -yV upgrade
+   sudo apt-fast -yV dist-upgrade
+   sudo apt-fast -yV autoremove
+   sudo apt-fast autoclean
    sudo shutdown -r now
    ```
 
@@ -39,25 +41,25 @@ Codename:	noble
 
    ```bash
    # 必須なもの
-   sudo apt -y install git  # バージョン管理
-   sudo apt -y install vim  # CUIエディタ
-   sudo apt -y install curl # データ送受信
-   sudo apt -y install cmake  # ビルドツール
-   sudo apt -y install build-essential  # ビルドツール
-   sudo apt -y install evince  # PDFビューワ
-   sudo apt -y install ffmpeg  # 画像処理
-   sudo apt -y install ubuntu-restricted-extras  # フォント・動画再生用コーデック
-   sudo apt -y install gnome-tweaks  # 詳細設定
-   sudo apt -y install gnome-shell-extension-manager  # Gnome Extensions
-   sudo apt -y install gnuplot  # 可視化
-   sudo apt -y install direnv  # 環境変数の設定
+   sudo apt-fast-y install git  # バージョン管理
+   sudo apt-fast-y install vim  # CUIエディタ
+   sudo apt-fast-y install curl # データ送受信
+   sudo apt-fast-y install cmake  # ビルドツール
+   sudo apt-fast-y install build-essential  # ビルドツール
+   sudo apt-fast-y install evince  # PDFビューワ
+   sudo apt-fast-y install ffmpeg  # 画像処理
+   sudo apt-fast-y install ubuntu-restricted-extras  # フォント・動画再生用コーデック
+   sudo apt-fast-y install gnome-tweaks  # 詳細設定
+   sudo apt-fast-y install gnome-shell-extension-manager  # Gnome Extensions
+   sudo apt-fast-y install gnuplot  # 可視化
+   sudo apt-fast-y install direnv  # 環境変数の設定
    # 個人の好み
-   sudo apt -y install terminator  # かっこいいターミナルエミュレータ
+   sudo apt-fast-y install terminator  # かっこいいターミナルエミュレータ
    sudo apt-add-repository ppa:fish-shell/release-3  # fishのリモートリポジトリを登録
-   sudo apt -y install fish  # モダンなシェル
-   sudo apt -y install peco  # CUI上のフィルタ
-   sudo apt -y install fonts-ipafont fonts-ricty-diminished && fc-cache -fv  # IPAフォント
-   sudo apt -y install unar  # ファイル解凍
+   sudo apt-fast-y install fish  # モダンなシェル
+   sudo apt-fast-y install peco  # CUI上のフィルタ
+   sudo apt-fast-y install fonts-ipafont fonts-ricty-diminished && fc-cache -fv  # IPAフォント
+   sudo apt-fast-y install unar  # ファイル解凍
    curl -fsSL https://install.julialang.org | sh  # Julia
    curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path  # Rust
    . "$HOME/.cargo/env"  # Rustのパスを通す
@@ -65,9 +67,9 @@ Codename:	noble
    cargo install starship --locked  # プロンプト装飾
    cargo install git-delta  # gitの差分出力
    # 基本的なコマンドのRust再実装
-   sudo apt install bat  # catの代替
-   sudo apt install fd-find  # findの代替
-   sudo apt install ripgrep  # grepの代替
+   sudo apt-fast install bat  # catの代替
+   sudo apt-fast install fd-find  # findの代替
+   sudo apt-fast install ripgrep  # grepの代替
    cargo install du-dust  # duの代替
    cargo install eza  # lsの代替
    cargo install procs  # psの代替
@@ -77,7 +79,7 @@ Codename:	noble
    TeXLive はすごく時間がかかるので暇なときにやる
 
    ```bash
-   sudo apt install texlive-full
+   sudo apt-fast install texlive-full
    sudo kanji-config-updmap-sys haranoaji  # 日本語フォントとして原ノ味フォントを指定
    ```
 
@@ -147,7 +149,7 @@ Codename:	noble
 10. [GitHub CLI](https://docs.github.com/ja/github-cli/github-cli/about-github-cli)を使った GitHub アカウントの認証
 
 ```bash
-sudo apt install gh
+sudo apt-fast install gh
 gh auth login
 ```
 
