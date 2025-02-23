@@ -61,8 +61,15 @@ Codename:	noble
    curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path  # Rust
    . "$HOME/.cargo/env"  # Rustのパスを通す
    cargo install starship --locked  # プロンプト装飾
-   cargo install exa  # lsの代替
    cargo install git-delta  # gitの差分出力
+   # 基本的なコマンドのRust再実装
+   sudo apt install bat  # catの代替
+   sudo apt install fd-find  # findの代替
+   sudo apt install ripgrep  # grepの代替
+   cargo install du-dust  # duの代替
+   cargo install eza  # lsの代替
+   cargo install procs  # psの代替
+   cargo install sd  # sedの代替
    ```
 
    TeXLive はすごく時間がかかるので暇なときにやる
