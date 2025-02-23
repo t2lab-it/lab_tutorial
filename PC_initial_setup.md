@@ -50,6 +50,7 @@ Codename:	noble
    sudo apt -y install gnome-tweaks  # 詳細設定
    sudo apt -y install gnome-shell-extension-manager  # Gnome Extensions
    sudo apt -y install gnuplot  # 可視化
+   sudo apt -y install direnv  # 環境変数の設定
    # 個人の好み
    sudo apt -y install terminator  # かっこいいターミナルエミュレータ
    sudo apt-add-repository ppa:fish-shell/release-3  # fishのリモートリポジトリを登録
@@ -60,6 +61,7 @@ Codename:	noble
    curl -fsSL https://install.julialang.org | sh  # Julia
    curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path  # Rust
    . "$HOME/.cargo/env"  # Rustのパスを通す
+   cargo install --locked typst-cli  # LaTeXの代替になる新しい組版ソフト
    cargo install starship --locked  # プロンプト装飾
    cargo install git-delta  # gitの差分出力
    # 基本的なコマンドのRust再実装
