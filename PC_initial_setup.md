@@ -122,11 +122,25 @@ Codename:	noble
    sudo systemctl enable --now zramswap
    ```
 8. [ラップトップ]バッテリー寿命を延ばす設定
+
    ```bash
    sudo apt install -y tlp tlp-rdw
    sudo systemctl enable tlp
    sudo systemctl start tlp
+   sudo vim /etc/tlp.conf
    ```
+
+   して
+
+   ```conf
+   # Battery charge level below which charging will begin.
+   START_CHARGE_THRESH_BAT0=50
+   # Battery charge level above which charging will stop.
+   STOP_CHARGE_THRESH_BAT0=80
+   ```
+
+   のようにコメントアウトする（具体的な数値は自分のラップトップ使用状況に合わせて変える）
+
 9. デスクトップ背景を単色にする
 
    - HTMLカラーコードは例えば[日本の伝統色](https://nipponcolors.com/)から探す
