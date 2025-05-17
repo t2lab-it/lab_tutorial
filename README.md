@@ -20,7 +20,9 @@
 また，ネットで読める文章には
 
 1. [kaityo256: lab_startup](https://kaityo256.github.io/lab_startup/)（慶応大・渡辺先生）
-  - [スライド](https://speakerdeck.com/kaityo256/)
+
+- [スライド](https://speakerdeck.com/kaityo256/)
+
 2. [Hiroyuki Ohsaki：充実した大学・大学院生活のための 100 のヒント (草稿)](https://lsnl.jp/~ohsaki/research/100-tips/)（関西学院大・大崎先生）
 3. [発声練習：卒業論文、修士論文関連のエントリー](https://next49.hatenadiary.jp/entry/20080105/p3)
 4. [Ten Simple Rules](https://collections.plos.org/collection/ten-simple-rules/)
@@ -615,7 +617,7 @@ Nature の[How to construct a _Nature_ summary paragraph](https://www.nature.com
 
 ### 奨学金・研究費申請書の書き方
 
-<!-- `howto_apply_grant.md` -->
+長くなったので[奨学金・研究費申請書の書き方](howto_write_proposal.md)にまとめました．
 
 > [!NOTE]
 > TBA：
