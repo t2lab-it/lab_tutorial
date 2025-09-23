@@ -20,7 +20,7 @@ Codename:	noble
 2. BIOSを最新版に更新する
 3. WindowsのBitLockerドライブ暗号化を解除し，BIOSでセキュアブートを無効化しておく
 4. Ubuntuの最新版をインストールする
-   - [Ubuntu Desktop](https://jp.ubuntu.com/download)もしくは[Ubuntu Desktop 日本語 Remix](https://www.ubuntulinux.jp/download/ja-remix)
+   - [Ubuntu Desktop](https://jp.ubuntu.com/download)もしくは[Ubuntu Desktop日本語Remix](https://www.ubuntulinux.jp/download/ja-remix)
 
 ## OS設定
 
@@ -164,13 +164,13 @@ Codename:	noble
     - Accessibility: Seeing: Reduce Animation: on
     - Accessibility: Seeing: Large Text: on
     - Accessibility: Seeing: Cursor size: Medium
-    - To Do：設定ファイルを gist に登録する
+    - To Do：設定ファイルをgistに登録する
 
 11. Gnome-tweaksで調整する項目
-    フォント：インターフェースのテキスト：IPA P ゴシック Regular
-    フォント：ドキュメントのテキスト：IPA P ゴシック Regular
+    フォント：インターフェースのテキスト：IPA PゴシックRegular
+    フォント：ドキュメントのテキスト：IPA PゴシックRegular
     フォント：等幅テキスト：Monospace Regular
-    キーボード：追加のレイアウトオプション：Caps Lock を追加の Control とする
+    キーボード：追加のレイアウトオプション：Caps Lockを追加のControlとする
     ウィンドウ：ウィンドウ操作キー：Alt
     ウィンドウ：ホバーでフォーカスを当てる
     キーボードとマウス：マウスクリックのエミュレーション：無効
@@ -193,8 +193,8 @@ Codename:	noble
 
 ## 参考にしたページ
 
-- [金子邦彦研究室：Ubuntu 22.04 のインストール直後の設定](https://www.kkaneko.jp/tools/ubuntu/ubuntu_setup.html)
-- [@karaage0703：Ubuntu をちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554)
+- [金子邦彦研究室：Ubuntu 22.04のインストール直後の設定](https://www.kkaneko.jp/tools/ubuntu/ubuntu_setup.html)
+- [@karaage0703：Ubuntuをちょっと使いやすくする設定集](https://qiita.com/karaage0703/items/705f1b750c486f00d554)
 - 他にもいろいろなウェブサイトでLinuxの設定が紹介されているが，各項目が自分にとって有益かどうかをよく考慮してから実行すること．
 
 ## 様々な設定ファイル
@@ -219,19 +219,19 @@ Codename:	noble
   - LaTeXの設定ファイル
   - [mystyle.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle-sty)
   - [mystyle_jpn.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_jpn-sty) ：和文用設定ファイル
-  - [mystyle_beamer.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_beamer-sty) ：Beamer 用設定ファイル
-  - [mystyle_beamer_jpn.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_beamer_jpn-sty) ：和文 Beamer 用設定ファイル
-  - [mystyle_biblatex.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_biblatex-sty) ： BibLaTeX 用設定ファイル
+  - [mystyle_beamer.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_beamer-sty) ：Beamer用設定ファイル
+  - [mystyle_beamer_jpn.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_beamer_jpn-sty) ：和文Beamer用設定ファイル
+  - [mystyle_biblatex.sty](https://gist.github.com/ryo-ARAKI/c4f55e2c4c57a5997700160cc6ea55df#file-mystyle_biblatex-sty) ： BibLaTeX用設定ファイル
   - [.latexmkrc_revtex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_revtex) ：欧文コンパイル用設定ファイル
   - [.latexmkrc_uplatex](https://gist.github.com/ryo-ARAKI/8a256ef600325b0344bbc3990818b691#file-latexmkrc_uplatex) ：和文コンパイル用設定ファイル
   <!-- - [.xbindkeysrc](https://gist.github.com/ryo-ARAKI/b17adac7419087a8ae821ebd1b30cd81)
-  - 多ボタンマウスの Linux 用設定ファイル
+  - 多ボタンマウスのLinux用設定ファイル
   - Logitech MX Master 2S
 - [logid.cfg]()
   - マウスのボタン設定ファイル
   - Logitech MX Master 3S -->
 
-## VSCode の設定
+## VSCodeの設定
 
 - 導入している拡張機能は以下の通り．先頭に `code --install-extension` をつけるとターミナルからインストールできる：
 
@@ -284,7 +284,7 @@ Codename:	noble
   yzhang.markdown-all-in-one
   ```
 
-## GNOME shell extensions のリスト
+## GNOME shell extensionsのリスト
 
 - 設定ファイルは `~/.local/share/gnome-shell/extensions/` にあるが，単一のファイルではない（のでGist等に登録できない）
 - 最初から入っているSystem extensionsはUbuntu Dock以外をすべてoffにしてよい

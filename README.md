@@ -5,23 +5,23 @@
 この文章では，大学の研究室に所属する学生に向けたチュートリアルや役立つ情報をまとめています．
 同様の目的で書かれた書籍には
 
-1. [E・M・フィリップス，D・S・ピュー著，角谷 快彦訳，「博士号のとり方［第 6 版］―学生と指導教員のための実践ハンドブック―」，名古屋大学出版局（2018）](https://www.unp.or.jp/ISBN/ISBN978-4-8158-0923-2.html)
+1. [E・M・フィリップス，D・S・ピュー著，角谷 快彦訳，「博士号のとり方［第6版］―学生と指導教員のための実践ハンドブック―」，名古屋大学出版局（2018）](https://www.unp.or.jp/ISBN/ISBN978-4-8158-0923-2.html)
 2. [ピーター・Ｂ・メダワー著，鎮目 恭夫訳，「若き科学者へ （新版）」，みすず書房（2016）](https://www.msz.co.jp/book/detail/08530/)
 3. [石原 尚，「卒論・修論研究の攻略本―有意義な研究室生活を送るための実践ガイド―」，森北出版（2021）](https://www.morikita.co.jp/books/mid/094361)
    - 著者の紹介ブログ記事：[「卒論・修論研究の攻略本」ってどんな本？](https://note.com/hisashi_is/n/n128c8c269b3a)
 4. [研究ステップ編集委員会，先輩、研究ってどうやるんですか，京都大学出版会（2022）](https://www.kyoto-up.or.jp/9784814004195.html)
 
 などがあります．
-1 は定評のある書籍で，私自身も大学院時代に読んで非常に学ぶところが大きかったです．
-2 は原著が出版されたのが 1981 年と古い本ですが，その内容はいまも普遍的に通じるものだと思います．
+1は定評のある書籍で，私自身も大学院時代に読んで非常に学ぶところが大きかったです．
+2は原著が出版されたのが1981年と古い本ですが，その内容はいまも普遍的に通じるものだと思います．
 私自身が博士後期課程に進学して大学教員としてのキャリアを進むにあたり，精神的な心構えを学んだのはこの本を通じてでした．
-3，4 は最近出版された書籍で，より読みやすいと思います．
+3，4は最近出版された書籍で，より読みやすいと思います．
 
 また，ネットで読める文章には
 
 1. [kaityo256: lab_startup](https://kaityo256.github.io/lab_startup/)（慶応大・渡辺先生）
   - [スライド](https://speakerdeck.com/kaityo256/)
-2. [Hiroyuki Ohsaki：充実した大学・大学院生活のための 100 のヒント (草稿)](https://lsnl.jp/~ohsaki/research/100-tips/)（関西学院大・大崎先生）
+2. [Hiroyuki Ohsaki：充実した大学・大学院生活のための100のヒント (草稿)](https://lsnl.jp/~ohsaki/research/100-tips/)（関西学院大・大崎先生）
 3. [発声練習：卒業論文、修士論文関連のエントリー](https://next49.hatenadiary.jp/entry/20080105/p3)
 4. [Ten Simple Rules](https://collections.plos.org/collection/ten-simple-rules/)
 
@@ -43,15 +43,15 @@
 
 ## PC・ソフトウェア関連
 
-### PC の設定方法
+### PCの設定方法
 
  <!-- `PC_initial_setup.md` -->
 
-私は Linux（Ubuntu）を入れた PC を研究に使っています．
-理論や数値計算系，とくに一日中サーバやスパコンにつないでいるのであれば，研究用の PC を Linux にするのは考慮に値する選択肢だと思います（が，バイアスがかかっているかもしれません）．
-実験系は装置の制御ソフトが Windows のみだったりするので要注意です．
+私はLinux（Ubuntu）を入れたPCを研究に使っています．
+理論や数値計算系，とくに一日中サーバやスパコンにつないでいるのであれば，研究用のPCをLinuxにするのは考慮に値する選択肢だと思います（が，バイアスがかかっているかもしれません）．
+実験系は装置の制御ソフトがWindowsのみだったりするので要注意です．
 
-私の PC の初期設定やソフトウェアの設定は[Ubuntu の初期設定とソフトウェアのインストール・設定](PC_initial_setup.md)にまとめています．
+私のPCの初期設定やソフトウェアの設定は[Ubuntuの初期設定とソフトウェアのインストール・設定](PC_initial_setup.md)にまとめています．
 
 </details>
 
@@ -64,7 +64,7 @@
 なお，私がおもに使っている言語は：
 
 - Fortran：スパコンを使う大規模並列計算およびポスト解析
-- Python：ローカルのパソコンで可能なデータ処理および Matplotlib を用いた可視化，グラフ作成
+- Python：ローカルのパソコンで可能なデータ処理およびMatplotlibを用いた可視化，グラフ作成
 - Julia：テスト計算や簡単なモデルの数値計算とポスト解析
 
 ですので，これらを使うのであればサポートができます．
@@ -77,18 +77,18 @@
 > - 「モダンな」数値計算ソフトウェアの開発環境
 > - サーバの使い方（ログイン/ファイル移動/計算ジョブの投入/...）
 
-#### 数値計算の tips
+#### 数値計算のtips
 
-- プログラミング言語ごとの tips は[ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)にまとめています．
+- プログラミング言語ごとのtipsは[ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)にまとめています．
 - ポスト処理でデータを解析するコードとデータをプロットするコードは分割する．
 
   論文を書く段階になると図の微妙な修正を何度もすることになるので，そのたびにデータの解析からやり直していては時間がかかります．
   そこで，ポスト解析を終えて「このデータをプロットすればよい」段階で一旦データを吐いておき，別のスクリプトでそれを読み込んでプロットすると，グラフの微修正が容易です．
-  Python なら `.npy` ，MATLAB なら `.mat` など，各プログラミング言語で効率的に扱えるバイナリ形式があるのでそれを使うとよいでしょう．
+  Pythonなら `.npy` ，MATLABなら `.mat` など，各プログラミング言語で効率的に扱えるバイナリ形式があるのでそれを使うとよいでしょう．
 
 - 色覚多様性に配慮したカラーマップを使う．
 
-  とくに MATLAB のデフォルトは[Jet カラーマップ](https://jp.mathworks.com/help/matlab/ref/jet.html)という明度が線形に変化せず，赤と緑が同時に使われているひどいものです．
+  とくにMATLABのデフォルトは[Jetカラーマップ](https://jp.mathworks.com/help/matlab/ref/jet.html)という明度が線形に変化せず，赤と緑が同時に使われているひどいものです．
   できる限り[Perceptually Uniform Sequential Colormap](https://matplotlib.org/stable/users/explain/colors/colormaps.html#sequential)を使うようにしてください．
   なお，カラーマップの選び方と色覚多様性については，例えば以下の文献を参照してください：
 
@@ -97,12 +97,12 @@
   - [森下，「科学的・非科学的カラーマップ」，測地学会誌（2021）](https://doi.org/10.11366/sokuchi.67.29)
   - [文部科学省，「色覚に関する指導の資料」](https://www.pref.yamanashi.jp/documents/5729/sikikakushiryou.pdf)
 
-### 研究や論文執筆での GitHub の使い方
+### 研究や論文執筆でのGitHubの使い方
 
  <!-- `howto_use_git_for_research.md` -->
 
 研究でプログラムや原稿といったテキスト形式のソースコードを編集するときは，必ずバージョン管理ソフトを使いましょう．
-そのご利益にはさまざまなものがありますが（参考：[kaityo256: 数値計算屋のための Git 入門](https://speakerdeck.com/kaityo256/starting-git)），
+そのご利益にはさまざまなものがありますが（参考：[kaityo256: 数値計算屋のためのGit入門](https://speakerdeck.com/kaityo256/starting-git)），
 
 - いつでも（自分でマークした）過去のバージョンに戻すことができる．
 - 複数の機能を並行して実装したり複数人で並行して開発することができる．
@@ -110,13 +110,13 @@
 が非常に大きいです．
 バージョン管理ソフトにもさまざまなものがありますが，もっとも広く使われている[Git](https://git-scm.com/)/[GitHub](https://github.co.jp/)を使うのがよいと思います．
 簡単な使い方をするだけでもいくつかのコマンド（ `git add/commit/push/fetch/pull` ）を覚える必要があって勉強が大変ですが，すこしずつ慣れていきましょう．
-Git/GitHub は分散型バージョン管理であることから，ローカルのマシン以外にバックアップをとれることも利点です．
+Git/GitHubは分散型バージョン管理であることから，ローカルのマシン以外にバックアップをとれることも利点です．
 （研究室外のサーバにおいてはいけないデータを扱う際には[GitLab](https://about.gitlab.com/ja-jp/)などオンプレミスな環境を利用しましょう．）
-[kaityo256: GitHub 演習](https://github.com/kaityo256/github)をやれば，以下にまとめたような用途で GitHub を使うには十分だと思います．
+[kaityo256: GitHub演習](https://github.com/kaityo256/github)をやれば，以下にまとめたような用途でGitHubを使うには十分だと思います．
 
 #### 研究コードの管理
 
-GitHub を使って
+GitHubを使って
 
 1. 「正常に動く」コードを `master/main` ブランチに置く．
 2. 別ブランチで新しい機能を実装する/リファクタリングする/バグを取る．
@@ -130,42 +130,42 @@ GitHub を使って
 - [GitHub Actions](https://docs.github.com/ja/actions)を使ってテストし，バグを混入させないようにコードを開発する．
 - [Wiki](https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about-wikis)を使ってコードのドキュメントを維持する
 
-など，GitHub の豊富な機能を使うとより効率的な開発ができるので，ぜひチャレンジしてみてください．
+など，GitHubの豊富な機能を使うとより効率的な開発ができるので，ぜひチャレンジしてみてください．
 
 #### 研究ノートの管理
 
-日々の研究ノートを[Markdown](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)で書いて GitHub でホストしておくと便利です．
-Markdown とは「文書を記述するための軽量マークアップ言語のひとつ（Wikipedia）」 で，
+日々の研究ノートを[Markdown](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)で書いてGitHubでホストしておくと便利です．
+Markdownとは「文書を記述するための軽量マークアップ言語のひとつ（Wikipedia）」 で，
 
-- プレーンテキストで書ける（=Git で管理できる）
-- 見出し/箇条書き/強調表示など文章の構造化が容易である（WYSIWYG でない）
+- プレーンテキストで書ける（=Gitで管理できる）
+- 見出し/箇条書き/強調表示など文章の構造化が容易である（WYSIWYGでない）
 - 表/数式/図の挿入など拡張も可能である
-- HTML や PDF などさまざまな形式へ変換できる
+- HTMLやPDFなどさまざまな形式へ変換できる
 
 といった特徴をもちます．
-この文章も Markdown で書いたものを GitHub でホストしています．
+この文章もMarkdownで書いたものをGitHubでホストしています．
 この利点を活かし，例えば：
 
-- 指導教員を collaborator に入れておき，進捗を可視化する．
+- 指導教員をcollaboratorに入れておき，進捗を可視化する．
 - 研究ノートを抜粋したものを[Marp](https://marp.app/)や[Pandoc](https://pandoc.org/)でスライド化し，進捗報告の資料にする．
-- 日頃から書き溜めておいた内容を卒論や修論の LaTeX にコピペする．
+- 日頃から書き溜めておいた内容を卒論や修論のLaTeXにコピペする．
 
 といった使い方が考えられます．
 
 #### 論文執筆
 
-LaTeX で論文を執筆する際も，GitHub を使って
+LaTeXで論文を執筆する際も，GitHubを使って
 
-1. Issue に書くべき内容を書き出し，執筆計画を建てる．
+1. Issueに書くべき内容を書き出し，執筆計画を建てる．
 2. 別ブランチで執筆を進めたり共著者からの添削を反映する．
-3. `latexdiff-vc` を使って `master/main` ブランチとの差分 PDF を出力する．
+3. `latexdiff-vc` を使って `master/main` ブランチとの差分PDFを出力する．
 4. 満足いくものになったら `master/main` ブランチにマージする．
 
 というワークフローを踏むことで効率的な執筆が可能になります．
-GitHub を利用した卒論・修論執筆について，
+GitHubを利用した卒論・修論執筆について，
 
-- [立命館大学情報理工学部サイバーセキュリティ研究室：卒業論文のための GitHub 運用法](https://cysec.ise.ritsumei.ac.jp/2024/01/08/thesis-git-repository/)
-- [komatsuna4747：Git/GitHub を用いて論文を執筆する](https://komatsuna4747.github.io/how-to-use-git/writing-paper.html)
+- [立命館大学情報理工学部サイバーセキュリティ研究室：卒業論文のためのGitHub運用法](https://cysec.ise.ritsumei.ac.jp/2024/01/08/thesis-git-repository/)
+- [komatsuna4747：Git/GitHubを用いて論文を執筆する](https://komatsuna4747.github.io/how-to-use-git/writing-paper.html)
 
 などが参考になると思います．
 
@@ -205,13 +205,13 @@ GitHub を利用した卒論・修論執筆について，
    レビュー論文とは，原著論文と教科書の中間の立ち位置で「あるトピックの過去数年〜数十年の進展」をまとめた論文のことです．
    分野の概観をつかみやすいので，教科書の次に（あるいは教科書がないような分野なら最初に）読むのがおすすめです．
    流体力学分野だとまずは[Annual Review of Fluid Mechanics](https://www.annualreviews.org/journal/fluid)で探すとよいでしょう．
-   分野が違う人は[Annual Reviews 系列](https://www.annualreviews.org/action/showPublications)から探すとよいと思います．
+   分野が違う人は[Annual Reviews系列](https://www.annualreviews.org/action/showPublications)から探すとよいと思います．
    他に流体力学（を含む物理学）系のレビューが載る雑誌には，
 
-   - Annual Reviews 系列の[Annual Review of Condensed Matter Physics](https://www.annualreviews.org/journal/conmatphys)
-   - Nature 系列の[Nature Reviews Physics](https://www.nature.com/natrevphys/)
+   - Annual Reviews系列の[Annual Review of Condensed Matter Physics](https://www.annualreviews.org/journal/conmatphys)
+   - Nature系列の[Nature Reviews Physics](https://www.nature.com/natrevphys/)
    - American Physics Society（APS）系列の[Review of Modern Physics](https://journals.aps.org/rmp/)
-   - Elsevier 系列の[Physics Reports](https://www.sciencedirect.com/journal/physics-reports)
+   - Elsevier系列の[Physics Reports](https://www.sciencedirect.com/journal/physics-reports)
 
    などがあります．
 
@@ -219,8 +219,8 @@ GitHub を利用した卒論・修論執筆について，
 
    流体力学分野で定評のある雑誌には
 
-   - Cambridge University Press の[Journal of Fluid Mechanics](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics)
-   - APS の[Physical Review Fluids](https://journals.aps.org/prfluids/)
+   - Cambridge University Pressの[Journal of Fluid Mechanics](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics)
+   - APSの[Physical Review Fluids](https://journals.aps.org/prfluids/)
    - American Institute of Physics（AIP）の[Physics of Fluids](https://pubs.aip.org/aip/pof)
    - 日本流体力学会の[Fluid Dynamics Research](https://iopscience.iop.org/journal/1873-7005)
 
@@ -231,7 +231,7 @@ GitHub を利用した卒論・修論執筆について，
 
 - [Google scholar](https://scholar.google.co.jp/)
 
-  「その論文を引用した論文」を網羅的に探しやすく，LaTeX で文献を引用する際に必要な `.bib` ファイルも（出版社のサイトでダウンロードできるものより）使いやすいと思います．
+  「その論文を引用した論文」を網羅的に探しやすく，LaTeXで文献を引用する際に必要な `.bib` ファイルも（出版社のサイトでダウンロードできるものより）使いやすいと思います．
   お金を払わないと読めない論文もなんやかんや本文を読めるリンクが辿れたりします．
 
 - [arXiv](https://arxiv.org/)
@@ -244,8 +244,8 @@ GitHub を利用した卒論・修論執筆について，
 
 - [Perplexity](https://www.perplexity.ai/)，[Elicit](https://elicit.org/)，[Typeset](https://typeset.io/)，[Consensus](https://consensus.app/)
 
-  知りたいトピックを尋ねると **存在する** 文献を挙げてくれる AI を使ったウェブサイトです．
-  なお，ChatGPT は存在しない文献を実在するかのように紹介してくるので，論文探しには使わないようにしましょう．
+  知りたいトピックを尋ねると **存在する** 文献を挙げてくれるAIを使ったウェブサイトです．
+  なお，ChatGPTは存在しない文献を実在するかのように紹介してくるので，論文探しには使わないようにしましょう．
   他にもいろいろ便利なサービスが出てきているはずなので，見つけたら教えてください．
 
 - [Connected Papers](https://www.connectedpapers.com/)
@@ -253,8 +253,8 @@ GitHub を利用した卒論・修論執筆について，
   論文を入力すると，その関連論文の相関図を出してくれます．
   そのトピックの研究を概観したいときに便利ですが，無料版だとかなり厳しい回数制限があるので注意しましょう．
 
-新しい論文を効率的にチェックするためには，上に挙げた雑誌の新着論文を RSS 通知で毎日確認するとよいです．
-研究室のチャットツール（Slack，Teams 等）に RSS 通知をリンクすると，チャット上で議論することもできて有用だと思います（参考：[Slack に RSS フィードを追加する](https://slack.com/intl/ja-jp/help/articles/218688467-Slack-%E3%81%AB-RSS-%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B)）．
+新しい論文を効率的にチェックするためには，上に挙げた雑誌の新着論文をRSS通知で毎日確認するとよいです．
+研究室のチャットツール（Slack，Teams等）にRSS通知をリンクすると，チャット上で議論することもできて有用だと思います（参考：[SlackにRSSフィードを追加する](https://slack.com/intl/ja-jp/help/articles/218688467-Slack-%E3%81%AB-RSS-%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B)）．
 
 ### 論文の読み方
 
@@ -282,9 +282,9 @@ GitHub を利用した卒論・修論執筆について，
 いろいろな人が論文のまとめ方を紹介していますから，自分にあった方法を見つけるとよいでしょう．
 例えば：
 
-- A4 一枚に背景，解いた問題，手法，主要なデータ，結論などをまとめる．
+- A4一枚に背景，解いた問題，手法，主要なデータ，結論などをまとめる．
 - 論文を片面印刷して見開きの左ページに原稿，右ページにノートをとる．
-- LaTeX ノートを作って式展開をすべて埋める．
+- LaTeXノートを作って式展開をすべて埋める．
 
 などの方法があると思います．
 
@@ -296,7 +296,7 @@ GitHub を利用した卒論・修論執筆について，
 
 スライドづくりの一例：
 
-1. 白紙のスライドに論文の図表を 1 枚/1 スライドずつ貼る．
+1. 白紙のスライドに論文の図表を1枚/1スライドずつ貼る．
 2. それぞれの図の考察をまとめ，スライドに書きこむ．
 3. 理論など，図表以外の重要な情報のスライドを追加する．
 4. 重要な先行研究を調べ，文脈の理解に必要な図などを引用したスライドを追加する．
@@ -321,15 +321,15 @@ GitHub を利用した卒論・修論執筆について，
 ### 日々の研究室生活の過ごし方
 
 研究室に配属されると，それまでの講義に出席することが中心の生活は大きく変わり，その多くを研究室で過ごすことになります．
-ここでは，研究室生活を有意義に送るための tips を紹介します．
+ここでは，研究室生活を有意義に送るためのtipsを紹介します．
 
 - 研究室に来て議論する
 
-  COVID-19 パンデミックを経てリモートワークがある程度定着しましたが，研究についてはうまくいかない，というのが私の実感です．
+  COVID-19パンデミックを経てリモートワークがある程度定着しましたが，研究についてはうまくいかない，というのが私の実感です．
   自身の経験を振り返っても他者と議論することで研究が進んできました．
   とくに研究室に入ってすぐの時期は，一人で半日考えてもわからなかったことが先輩と議論すると簡単に解決してしまう，ということを経験すると思います．
   そこで，できる限り毎日研究室に来て先輩や教員，同級生と議論することを日常にしましょう．
-  Open-minded で交流することが大事です．
+  Open-mindedで交流することが大事です．
 
 - とにかく手を動かしてみる
 
@@ -339,7 +339,7 @@ GitHub を利用した卒論・修論執筆について，
 
 - つねに効率化を考える
 
-  私はこまごました研究上の tips を[ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)（TIL："Today I Learned"，今日学んだこと）にまとめています．
+  私はこまごました研究上のtipsを[ryo-ARAKI: TIL](https://github.com/ryo-ARAKI/TIL)（TIL："Today I Learned"，今日学んだこと）にまとめています．
   皆さんも同様のリポジトリを作って「何度も参照するけどそのたびにググるのが面倒なこと」などをまとめておくと，備忘録にもなり後輩を指導する際にも「ここを見ておいて」で済み，とても便利です．
 
 - 指導教員以外のメンターをもつ
@@ -357,7 +357,7 @@ GitHub を利用した卒論・修論執筆について，
 >   - 自律した研究者を目指す：「自分で立てる」ではなく「自分を律せる」ようになってほしい
 > - 参考になる（信頼できる）ネット上のリソース
 >   - Scholarpedia
->   - ChatGPT など生成 AI との付き合い方
+>   - ChatGPTなど生成AIとの付き合い方
 
 ### 進捗報告の準備方法
 
@@ -386,9 +386,9 @@ GitHub を利用した卒論・修論執筆について，
 - 資料作りに時間をかけすぎない．
 
   決まったテンプレートに図やグラフを並べたもので十分ですし，必要ならそこに手書きで書き込んでも構いません．
-  [Markdown でまとめた研究ノート](#研究ノートの管理)を[Marp](https://marp.app/)や[Pandoc](https://pandoc.org/)でスライド化するのもよいと思います．
+  [Markdownでまとめた研究ノート](#研究ノートの管理)を[Marp](https://marp.app/)や[Pandoc](https://pandoc.org/)でスライド化するのもよいと思います．
 
-- 資料は事前に指導教員やミーティング参加者に（PDF 形式で）共有する．
+- 資料は事前に指導教員やミーティング参加者に（PDF形式で）共有する．
 
   ミーティング後には議論した内容を資料に追記し，これも共有するようにしましょう．
 
@@ -401,7 +401,7 @@ GitHub を利用した卒論・修論執筆について，
 
 ## 対外発表や原稿執筆関連
 
-原稿を書くときに共通の tips：
+原稿を書くときに共通のtips：
 
 - [木下是雄，「理科系の作文技術」，中公新書（1981）](https://www.chuko.co.jp/shinsho/1981/09/100624.html)を読む．
 
@@ -419,7 +419,7 @@ GitHub を利用した卒論・修論執筆について，
 - まず規定より長い文章を書き，それを規定分量まで削ぎ落としていく．
 
   とくに要旨など分量に規定がある場合に注意すべきこととして，規定の分量に届くまで引き伸ばした原稿は印象がよくありません．
-  規定のおおよそ 1.5〜2 倍の文章を書き，それを削っていくことで密度の高い「迫力のある」原稿を書くことができます．
+  規定のおおよそ1.5〜2倍の文章を書き，それを削っていくことで密度の高い「迫力のある」原稿を書くことができます．
 
 - 自身の議論を適切な数式で表現する．
 
@@ -428,9 +428,9 @@ GitHub を利用した卒論・修論執筆について，
 > [!NOTE]
 > TBA：
 >
-> ICCFD のアブストを例に出す？
+> ICCFDのアブストを例に出す？
 
-Gist で管理している LaTeX テンプレートのリンク集を以下にまとめています：
+Gistで管理しているLaTeXテンプレートのリンク集を以下にまとめています：
 
 <details>
 <summary>LaTeXテンプレート</summary>
@@ -439,7 +439,7 @@ Gist で管理している LaTeX テンプレートのリンク集を以下に�
 - [beamer_template.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-beamer_template-tex) ：スライドのテンプレート
 - [beamer_template_poster.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-beamer_template_poster-tex) ：ポスターのテンプレート
 - [beamer_template_flash_talk.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-beamer_template_flash_talk-tex) ：フラッシュトークのテンプレート
-- [standalone_figure.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-standalone_figure-tex) ：TikZ を用いたスタンドアロン図のテンプレート
+- [standalone_figure.tex](https://gist.github.com/ryo-ARAKI/9aa9ce4f0fab42a758e1370ad1eb4487#file-standalone_figure-tex) ：TikZを用いたスタンドアロン図のテンプレート
 
 </details>
 
@@ -488,9 +488,9 @@ Gist で管理している LaTeX テンプレートのリンク集を以下に�
 1. 一番主張したい結果を決める．
 2. 想定聴衆を設定する．
 3. それらに合わせて発表のストーリーを考える．
-4. 1 つのメッセージ/トピックを 1 枚のスライドに割り振り，全体の構成を決める．
-   - 例：スライド 1 枚につき理解してほしい図を 1 つ載せる．
-   - スライド枚数は（基本的に）1 分/1 枚とする．
+4. 1つのメッセージ/トピックを1枚のスライドに割り振り，全体の構成を決める．
+   - 例：スライド1枚につき理解してほしい図を1つ載せる．
+   - スライド枚数は（基本的に）1分/1枚とする．
    <!-- - 試問や公聴会は時間が短いので枚数が多くなってもよいが，わかりやすい構成にはじゅうぶん注意する． -->
 5. 各スライドに「それ単体で内容を理解するのに十分な」情報を書く．
 6. まとめスライドに"Take-home message"を書く
@@ -516,13 +516,13 @@ Gist で管理している LaTeX テンプレートのリンク集を以下に�
 
 ポスターのデザインについても，スライド同様[伝わるデザイン](https://tsutawarudesign.com/)を一読しておくことを強くおすすめします．
 
-ポスター作成時の tips をいくつか示します：
+ポスター作成時のtipsをいくつか示します：
 
 - ヘッダーに自分の顔写真を入れておく．
 
   ポスターセッション以外など，自分がポスターのそばにいないときに興味を持ってくれた人とあとで繋がれる確率を上げることができます．
 
-- 追加資料へのリンクを QR コードにして入れておく．
+- 追加資料へのリンクをQRコードにして入れておく．
 
   例えば動画や三次元可視化，プレプリントなど，研究に興味を持ってもらえた人にさらにアピールするための素材をクラウドの共有フォルダに準備しておき，そのリンクをポスターにいれておくとよいでしょう．
 
@@ -531,7 +531,7 @@ Gist で管理している LaTeX テンプレートのリンク集を以下に�
 学会に参加するときは，まずウェブサイトや当日の受付でもらえるプログラムをみて聞きたい発表に印を着けましょう．
 場合によっては発表ごとにセッションを移動することになるかもしれません．
 
-発表を聞くときは，批判的に（critical に）聞くことを心がけましょう．
+発表を聞くときは，批判的に（criticalに）聞くことを心がけましょう．
 これは発表の粗さがしをしながら聞くということではなく，
 
 - 自分がこの研究をしていたら何が気になるだろうか？
@@ -594,7 +594,7 @@ Gist で管理している LaTeX テンプレートのリンク集を以下に�
 #### アブストラクトの書き方
 
 論文のアブストラクトは，タイトルで興味を持ってくれた人が本文を読むかどうかを決めるために読む大切な文章です．
-基本的には以下の構成に従って，各項目を 1〜2 文ずつ書いていくとよいでしょう：
+基本的には以下の構成に従って，各項目を1〜2文ずつ書いていくとよいでしょう：
 
 1. 分野の背景と問題の定義
 2. 詳しい動機と先行研究
@@ -603,8 +603,8 @@ Gist で管理している LaTeX テンプレートのリンク集を以下に�
 5. 主結果とその詳細
 6. インパクトと将来への展開
 
-Nature の[How to construct a _Nature_ summary paragraph](https://www.nature.com/documents/nature-summary-paragraph.pdf)という記事が非常に参考になると思います．
-ただし，これは 1 パラグラフのサマリーの書き方なので，1 ページ程度書ける場合は段落に分けることを忘れないようにしましょう．
+Natureの[How to construct a _Nature_ summary paragraph](https://www.nature.com/documents/nature-summary-paragraph.pdf)という記事が非常に参考になると思います．
+ただし，これは1パラグラフのサマリーの書き方なので，1ページ程度書ける場合は段落に分けることを忘れないようにしましょう．
 
 #### 本文の書き方
 
@@ -621,7 +621,7 @@ Nature の[How to construct a _Nature_ summary paragraph](https://www.nature.com
 > TBA：
 >
 > - 「書けと言われていること」を書く．
-> - 規定の枠・文字数の 9 割以上を埋める．
+> - 規定の枠・文字数の9割以上を埋める．
 > - 模式図を効果的に使う．
 > - 審査員と共有できる前提・背景分野の知識を調べる．
 > - 自分がもらっていた奨学金のリンク
